@@ -1,0 +1,6 @@
+c:\users\vadim\documents\visual studio 2013\Projects\time\time\bin\Debug\time.exe.config
+c:\users\vadim\documents\visual studio 2013\Projects\time\time\bin\Debug\time.exe
+c:\users\vadim\documents\visual studio 2013\Projects\time\time\bin\Debug\time.pdb
+c:\users\vadim\documents\visual studio 2013\Projects\time\time\obj\Debug\time.csprojResolveAssemblyReference.cache
+c:\users\vadim\documents\visual studio 2013\Projects\time\time\obj\Debug\time.exe
+c:\users\vadim\documents\visual studio 2013\Projects\time\time\obj\Debug\time.pdb
