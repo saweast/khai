@@ -1,0 +1,33 @@
+a img {
+	width: 100px;
+	border: 3px dashed green;
+	transition: 0.1s ease 0.1s;
+}
+a img:active {
+	transition: 0.1s ease 0.1s;
+	border: 5px solid red;
+}
+nav ul li {
+	display: inline-block;
+}
+span:nth-child(1) {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+span:nth-child(2) {
+	font-size: 24px;
+	text-decoration: line-through;
+}
+span:nth-child(3) {
+	font-size: 24px;
+	text-decoration: underline;
+}
+span:nth-child(4) {
+	font-size: 24px;
+	font-weight: bolder;
+}
+span:nth-child(5) {
+	font-size: 3em;
+	color: red;
+	background-image: url("../images/Flight.jpg");
+}
