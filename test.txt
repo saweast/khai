@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 61981981919719719719
 61981981919719719719
@@ -17,3 +18,6 @@ jerrp
 
 wedjeklfwe
 wefwefl.
+=======
+new file
+>>>>>>> origin/master
