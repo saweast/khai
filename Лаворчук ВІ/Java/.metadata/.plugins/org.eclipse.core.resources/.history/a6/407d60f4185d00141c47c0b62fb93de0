@@ -89,13 +89,20 @@ public class form {
 						str2 = text_4.getText(),
 						str3 = text_5.getText(),
 						str2_3 = str2 + str3,
-						bufStr = "",
-						strBuf1 = "";
+						bufStr = "";
 				int i, j;
 				for (i = 0; i < str1.length(); i++) {
 					for (j = 0; j < str2_3.length(); j++) {
 						String strM1=str1.substring(i, i+1), strM2=str2_3.substring(j, j+1);
-						
+						if (!strM1.equalsIgnoreCase(strM2)) {
+							if (bufStr.equalsIgnoreCase(strM1)){
+					
+							}
+							else {
+								bufStr += strM1;
+								break;
+							}							
+						}
 					}
 				}
 				label_1.setText(bufStr);

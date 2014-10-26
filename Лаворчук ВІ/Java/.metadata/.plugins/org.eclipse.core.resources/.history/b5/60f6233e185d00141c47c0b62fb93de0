@@ -80,7 +80,7 @@ public class form {
 		text_5.setBounds(10, 81, 76, 21);
 		
 		final Label label_1 = new Label(group_1, SWT.NONE);
-		label_1.setBounds(111, 81, 92, 15);
+		label_1.setBounds(111, 81, 55, 15);
 		
 		Button btnNewButton_1 = new Button(group_1, SWT.NONE);
 		btnNewButton_1.addSelectionListener(new SelectionAdapter() {
@@ -89,16 +89,17 @@ public class form {
 						str2 = text_4.getText(),
 						str3 = text_5.getText(),
 						str2_3 = str2 + str3,
-						bufStr = "",
-						strBuf1 = "";
+						bufStr = "";
 				int i, j;
 				for (i = 0; i < str1.length(); i++) {
 					for (j = 0; j < str2_3.length(); j++) {
 						String strM1=str1.substring(i, i+1), strM2=str2_3.substring(j, j+1);
-						
+						if (!strM1.equalsIgnoreCase(strM2)) {
+							bufStr += strM1;
+						}
 					}
 				}
-				label_1.setText(bufStr);
+				label_1.setText(strM1);
 			}
 		});
 		btnNewButton_1.setBounds(10, 119, 75, 25);
