@@ -53,7 +53,6 @@ public class form {
 				int k = Integer.parseInt(text_1.getText());
 				char[] buf = new char[k];
 				str.getChars(0, k, buf, 0);
-				str.StringBuffer.
 				text_2.setTextChars(buf);
 			}
 		});
