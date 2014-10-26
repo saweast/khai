@@ -1,3 +1,4 @@
 INDEX VERSION 1.126+C:\Users\Vadim\Desktop\khai\Лаворчук ВІ\Java\.metadata\.plugins\org.eclipse.jdt.core
 3985886414.index
+1945590125.index
 2593455192.index

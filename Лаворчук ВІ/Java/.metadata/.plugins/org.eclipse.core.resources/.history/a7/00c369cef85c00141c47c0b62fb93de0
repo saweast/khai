@@ -52,7 +52,7 @@ public class form {
 				String str = text.getText();
 				int k = Integer.parseInt(text_1.getText());
 				char[] buf = new char[k];
-				str.getChars(0, k, buf, 0);
+				str.getChars(0, 2, buf, 0);
 				text_2.setTextChars(buf);
 			}
 		});

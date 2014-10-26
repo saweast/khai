@@ -49,11 +49,9 @@ public class form {
 		Button btnNewButton = new Button(group, SWT.NONE);
 		btnNewButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				String str = text.getText();
+				char[] str = text.getText();
 				int k = Integer.parseInt(text_1.getText());
-				char[] buf = new char[k];
-				str.getChars(0, k, buf, 0);
-				text_2.setTextChars(buf);
+				int buf = StringBuffer.getChars(0,2,str,0);
 			}
 		});
 		btnNewButton.setBounds(10, 79, 158, 25);
