@@ -1,0 +1,89 @@
+package laba4;
+
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.events.KeyAdapter;
+import org.eclipse.swt.events.KeyEvent;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class laba4z1 {
+
+	protected Shell shell;
+	private Text text;
+
+	/**
+	 * Launch the application.
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			laba4z1 window = new laba4z1();
+			window.open();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Open the window.
+	 */
+	public void open() {
+		Display display = Display.getDefault();
+		createContents();
+		shell.open();
+		shell.layout();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+	}
+
+	/**
+	 * Create contents of the window.
+	 */
+	protected void createContents() {
+		shell = new Shell();
+		shell.setSize(450, 300);
+		shell.setText("SWT Application");
+		
+		Label label = new Label(shell, SWT.NONE);
+		label.setBounds(10, 10, 80, 15);
+		label.setText("\u0412\u0432\u0435\u0434\u0456\u0442\u044C \u0441\u043B\u043E\u0432\u043E:");
+		
+		text = new Text(shell, SWT.BORDER);
+		text.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e)
+			{
+				if( Character.isWhitespace(e.character) ) e.doit=false;
+				else e.doit=true;
+			}
+		});
+		text.setBounds(94, 7, 76, 21);
+		
+		Button button = new Button(shell, SWT.NONE);
+		button.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e)
+			{
+				
+			}
+			
+			public boolean compareChars(String word)
+			{
+				boolean res;
+				String a=word.substring(2, 2), b=word.substring(4, 4);
+				return a.equals(b)
+			}
+		});
+		button.setBounds(10, 31, 75, 25);
+		button.setText("\u041F\u0435\u0440\u0435\u0432\u0456\u0440\u0438\u0442\u0438");
+
+	}
+}
