@@ -56,11 +56,16 @@ public class form {
 				int k = Integer.parseInt(text_1.getText());
 				char [] buf = new char [k];
 				str.getChars(0, k, buf, 0);
+<<<<<<< HEAD
 				String strBuf=str.substring(k);
 				str=strBuf;
 				strBuf = String.valueOf(buf);
 				str += strBuf;
 				text_2.setText(str);
+=======
+				str.StringBuffer.
+				text_2.setTextChars(buf);
+>>>>>>> master
 			}
 		});
 		btnNewButton.setBounds(10, 79, 158, 25);
