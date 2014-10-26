@@ -16,7 +16,6 @@ public class laba3z2 {
 
 	protected Shell shell;
 	private Text text;
-	private Text text_1;
 
 	/**
 	 * Launch the application.
@@ -51,38 +50,34 @@ public class laba3z2 {
 	 */
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(312, 272);
+		shell.setSize(375, 272);
 		shell.setText("SWT Application");
 		
-		Label label = new Label(shell, SWT.NONE);
-		label.setText("rows");
-		label.setBounds(10, 16, 33, 15);
+		Label lblSize = new Label(shell, SWT.NONE);
+		lblSize.setText("Size:");
+		lblSize.setBounds(10, 16, 33, 15);
 		
 		text = new Text(shell, SWT.BORDER);
 		text.setBounds(49, 10, 76, 21);
 		
-		Label label_1 = new Label(shell, SWT.NONE);
-		label_1.setText("columns");
-		label_1.setBounds(135, 16, 55, 15);
-		
-		text_1 = new Text(shell, SWT.BORDER);
-		text_1.setBounds(196, 10, 76, 21);
-		
 		List list = new List(shell, SWT.BORDER);
-		list.setBounds(14, 57, 197, 141);
+		list.setBounds(10, 59, 164, 141);
+		
+		List list_1 = new List(shell, SWT.BORDER);
+		list_1.setBounds(185, 59, 164, 141);
 		
 		Button button = new Button(shell, SWT.NONE);
 		button.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				list.removeAll();
-				findMax(Integer.parseInt(text.getText()), Integer.parseInt(text_1.getText()));
+				findMax(Integer.parseInt(text.getText()));
 			}
 			
-			public void findMax(int r, int c)
+			public void findMax(int r)
 			{
 				Random rand = new Random();
-				int[][] matrix = new int[r][c];
+				int[][] matrix = new int[r][r];
 				for (int i = 0; i < matrix.length; i++) {
 				  matrix[i] = new int[r];
 				  for (int j = 0; j < matrix.length; j++) {
@@ -102,21 +97,33 @@ public class laba3z2 {
 					list.add(mst);
 					mst="";
 				}
-				int max=matrix[0][0];
-				for (int i = 0; i < r; i++)
+				int max=matrix[r/2][r/2];
+				int counter=0;
+				String scnd="";
+				list_1.removeAll();
+				for (int i = r/2; i < r; i++)
 				{
 					for (int j = 0; j < r; j++)
 					{
-						//тут умова чи входить matrix[i][j] до цієї піраміди
-						int тутбувя=5;
+						if(j>=(r/2)-counter&&j<=(r/2)+counter)
+						{
+							scnd+=Integer.toString(matrix[i][j])+" ";
+							if(matrix[i][j]>max)
+							{
+								max=matrix[i][j];
+							}
+						}
 					}
+					counter++;
+					list_1.add(scnd);
+					scnd="";
+					
 				}
-				list.add("Max element:" + max);
+				list_1.add("Max element:" + max);
 			}
 		});
 		button.setText("New Button");
 		button.setBounds(10, 204, 75, 25);
-
 	}
 
 }
