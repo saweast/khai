@@ -84,21 +84,41 @@ public class form {
 		
 		Button btnNewButton_1 = new Button(group_1, SWT.NONE);
 		btnNewButton_1.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
+			public String removeChar(String s, char c) {
+				   String r = "";
+				   for (int i = 0; i < s.length(); i++) {
+					   if (s.charAt(i) != c) r += s.charAt(i);
+				   }
+				   return r;
+				}
+			public void widgetSelected(SelectionEvent e) {				
 				String str1 = text_3.getText(),
 						str2 = text_4.getText(),
-						str3 = text_5.getText(),
-						str2_3 = str2 + str3,
-						bufStr = "",
-						strBuf1 = "";
-				int i, j;
+						//str3 = text_5.getText(),
+						buffer = "",
+						result = "";
+				int i,j;
 				for (i = 0; i < str1.length(); i++) {
-					for (j = 0; j < str2_3.length(); j++) {
-						String strM1=str1.substring(i, i+1), strM2=str2_3.substring(j, j+1);
-						
+					for (j = 0; j < str2.length(); j++) {
+						if (str1.substring(i, i + 1).equalsIgnoreCase(str2.substring(j, j + 1))){
+							buffer = str2.substring(j, j + 1);
+							char[] asuka = buffer.toCharArray();
+							result = removeChar(result, asuka[buffer.length()-1]);
+							buffer = "";							
+						}
+						else {
+							if (buffer.equalsIgnoreCase(str1.substring(i, i + 1))){
+								continue;
+							}
+							else {
+								buffer = str2.substring(j, j + 1);
+							}
+							result += buffer;
+						}
 					}
 				}
-				label_1.setText(bufStr);
+				label_1.setText(result);
+				result = "";
 			}
 		});
 		btnNewButton_1.setBounds(10, 119, 75, 25);
