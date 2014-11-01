@@ -3,3 +3,54 @@
 body	 {
 	background-color: #c4c4c4
 }
+.i-am {
+	border: 10px solid black;
+	border-radius: 200px;
+	height: 300px;
+	width: 300px;
+	
+}
+.i-am img {
+	border-radius: 200px;
+	height: 300px;
+	width: 300px;
+}
+.but-circle button {	
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+}
+.but-circle button:active {
+	outline: none;
+	border: none;
+}
+.but-circle button:focus {
+	outline: none;
+	border: none;
+}
+.but-circle button:nth-child(1) {
+	background-color: red;
+	transition: 0.5s linear 0s;
+}
+.but-circle button:nth-child(1):hover {
+	background-color: orange;
+	transition: 0.5s linear 0s;
+}
+.but-circle button:nth-child(2) {
+	background-color: green;
+	transition: 0.5s linear 0s;
+}
+.but-circle button:nth-child(2):hover {
+	background-color: yellow;
+	transition: 0.5s linear 0s;
+}
+.but-circle button:nth-child(3) {
+	background-color: blue;
+	transition: 0.5s linear 0s;
+}
+.but-circle button:nth-child(3):hover {
+	background-color: lightblue;
+	transition: 0.5s linear 0s;
+}
