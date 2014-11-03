@@ -5,55 +5,58 @@
 	<title>TeaDrinker Vadym</title>
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
 	<link rel="stylesheet" type="text/css" href="styles/main-style.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
 </head>
 <body>
+<div class="wrapper">
 	<header>
-		<h1>Лаворчук <span>TeaDrinker</span> Вадим</h1>
-		<p>cтудент</p>
-		<nav>
-			<button>Главная</button>
-			<button>Резюме</button>
-			<button>Контакты</button>
+		<h1>Vadym <strong>TeaDrinker</strong> Lavorchuk</h1>
+		<p>I am a student / web-developer</p>
+		<nav class="main-nav">
+			<button>Main</button>
+			<button>Resume</button>
+			<button>Contacts</button>
 		</nav>
 	</header>
-	<section>
+	<section class="content">
 		<div class="i-am">
-			<img src="images/i_am.jpg" alt="i_am">
+			<!-- <img src="images/i_am.jpg" alt="i_am"> -->
 		</div>
-		
-		<h2>Привет!</h2>
-		<p>Будем знакомы:
-			<nav class="but-circle">
-				<button>Резюме</button>
-				<button>Работы</button>
-				<button>Навыки</button>
-			</nav>
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.
-		</p>
+		<section class="inside">
+			<h2>Hello!</h2>
+			<p class="inside-nav">Will be familiar:
+				<nav class="but-circle">
+					<button>Resume</button>
+					<button>Works</button>
+					<button>Skills</button>
+				</nav>
+			</p>
+			<p class="some-info">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.
+			</p>
+		</section>
 	</section>
 	<footer>
-		<nav>
-			<div>
+		<nav class="footer-nav">
+			<div class="phone">
 				<button></button>
 				<dl>
-					<dt>Звоните:</dt>
+					<dt>Call:</dt>
 					<dd>+380637634802</dd>
 					<dd>+380997605013</dd>
 				</dl>
 			</div>
-			<div>
+			<div class="mail">
 				<button></button>
 				<dl>
-					<dt>Пишите:</dt>
+					<dt>Write:</dt>
 					<dd>lavorchukvadim@gmail.com</dd>
 				</dl>
 			</div>
-			<div>
+			<div class="soc">
 				<button></button>
 				<dl>
-					<dt>Я в соцсетях:</dt>
+					<dt>I'm in social networks:</dt>
 					<dd><button></button></dd>
 					<dd><button></button></dd>
 					<dd><button></button></dd>
@@ -61,5 +64,6 @@
 			</div>
 		</nav>
 	</footer>
+</div>
 </body>
 </html>
