@@ -15,6 +15,8 @@
 		$section->appendChild($idAttr1);
 		$name = $section->appendChild($file->createElement('Name'));
 		$name->appendChild($file->createTextNode($row[1]));
+		$image = $section->appendChild($file->createElement('Image'));
+		$image->appendChild($file->createTextNode($row[2]));
 	}
 	$file->save("results/Test.xml");
 	$test1 = $file->saveXML();
