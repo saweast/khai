@@ -156,6 +156,37 @@ footer {
 	font-size: 0.9em;
 	width: 60%;
 }
-dl dd {
+.phone, .mail, .soc {
+	position: relative;
+}
+.phone > button, .mail > button, .soc > button {
+	position: absolute;
+	top: 0;
+	left: 20px;
+}
+.phone > dl, .mail > dl, .soc > dl {
+	margin-left: 80px;
+    margin-top: 5px;
+}
+.footer-nav dt {
+	font-weight: bold;
+}
+.footer-nav dd {
 	margin: 0;
+}
+dd > button.fb, dd > button.tw, dd > button.g {
+	background-color: transparent;
+}
+.fb {
+	background-image: url("../images/facebook.jpeg");
+}
+.tw {
+	background-image: url("../images/twitter.png");
+}
+.g {
+	background-image: url("../images/google.jpeg");
+}
+.soc dl dd {
+	float: left;
+    margin: 0 0 0 -20px;
 }
