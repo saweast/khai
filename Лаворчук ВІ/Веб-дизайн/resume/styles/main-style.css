@@ -166,6 +166,9 @@ footer {
 	top: 0;
 	left: 20px;
 }
+.mail dd{
+	font-size: 0.8em;
+}
 .phone > dl, .mail > dl, .soc > dl {
 	margin-left: 80px;
     margin-top: 5px;
@@ -192,4 +195,10 @@ dd > button.fb, dd > button.tw, dd > button.g {
 .soc dl dd {
 	float: left;
     margin: 0 0 0 -20px;
+}
+body:after{
+	content:"©WIX.com";
+	height: 10px;
+	width: 50px;
+	position: absolute;
 }
