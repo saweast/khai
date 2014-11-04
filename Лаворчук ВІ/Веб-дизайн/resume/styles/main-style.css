@@ -85,6 +85,7 @@ button:focus {
 	color: white;
 	margin-right: 4%;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 .but-circle button:nth-child(1) {
 	background-color: rgba(232, 53, 86, 1);
@@ -109,6 +110,7 @@ button:focus {
 	font-size: 0.9em;
 }
 .content {
+	display: inline-block;
 	margin-bottom: 50px;
 }
 button::-moz-focus-inner { 
@@ -173,6 +175,7 @@ footer {
 }
 .footer-nav dd {
 	margin: 0;
+	word-wrap: break-word;
 }
 dd > button.fb, dd > button.tw, dd > button.g {
 	background-color: transparent;
