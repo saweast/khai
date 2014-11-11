@@ -1,0 +1,12 @@
+[OPTIONS]
+Contents file =convertor.hhc
+Title=Конвертор
+[FILES]
+convertor_01.htm
+convertor_02.htm
+convertor_03.htm
+convertor_04.htm
+convertor_05.htm
+[MAP]
+#include convertor.h
+

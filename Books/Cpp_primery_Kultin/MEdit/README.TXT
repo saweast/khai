@@ -1,0 +1,1 @@
+Простой редактор текста (medit.exe). Демонстрирует использование компонентов RichEdit, MainMenu, ToolBar, SpeedButton, OpenDialog, SaveDialog, работу с меню, выполнение операций чтения и записи текста в файл

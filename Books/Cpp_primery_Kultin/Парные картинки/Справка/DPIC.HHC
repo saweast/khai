@@ -1,0 +1,22 @@
+<!-- Сгенерирован макросом MakeHTML, (с) Культин Н.Б., 2000 -->
+<HTML><HEAD></HEAD>
+<BODY><OBJECT type="text/site properties">
+<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Правила">
+<param name="Local" value="dpic_01.htm">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Настройка программы">
+<param name="Local" value="dpic_02.htm">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="О программе">
+<param name="Local" value="dpic_03.htm">
+</OBJECT></UL>
+</BODY>
+</HTML>
+

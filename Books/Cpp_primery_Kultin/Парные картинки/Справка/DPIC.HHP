@@ -1,0 +1,20 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=dpic.chm
+Contents file=dpic.hhc
+Default topic=dpic_01.htm
+Display compile progress=No
+Language=0x419 Русский
+Title=Парные картинки
+
+
+[FILES]
+dpic_01.htm
+dpic_02.htm
+dpic_03.htm
+
+[MAP]
+#include dpic.h
+
+[INFOTYPES]
+
