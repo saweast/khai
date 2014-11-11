@@ -1,11 +1,5 @@
 a img {
-	width: 100px;
-	border: 3px dashed green;
-	transition: 0.1s ease 0.1s;
-}
-a img:active {
-	transition: 0.1s ease 0.1s;
-	border: 5px solid red;
+	border: none;
 }
 nav ul li {
 	display: inline-block;
@@ -29,5 +23,10 @@ span:nth-child(4) {
 span:nth-child(5) {
 	font-size: 3em;
 	color: red;
-	background-image: url("../images/Flight.jpg");
+	background-image: url("1.png");
 }
+
+	.menu {
+		border-radius: 15px;
+		border: 15px solid red;
+	}

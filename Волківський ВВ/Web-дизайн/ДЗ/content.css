@@ -1,0 +1,51 @@
+tr td #popularnews {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000000;
+	display: block;
+}
+tr td #lastnews {
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px 0px;
+	border: 1px solid #000000;
+	display: block;
+}
+tr td #commercial {
+	width: 100px;
+	height: 300px;
+	border: 1px solid #000000;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	right: 0px;
+	left: 0px;
+	float: right;
+	display: block;
+}
+footer {
+	position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px;
+    background: #39b54a;
+    color: #fff;
+    width: 100%;
+}
+#content {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+header {
+	color: #000000;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 300%;
+	text-decoration: none;
+}
