@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
+=======
 	<list key="installedFeatures">
 		<item value="com.android.ide.eclipse.adt.package.feature:23.0.2.1259578"/>
 		<item value="org.eclipse.cdt.gdb:7.0.0.201202111925"/>
@@ -24,6 +26,7 @@
 		<item value="org.eclipse.wb.swt.feature:1.5.2.r42x201302112017"/>
 		<item value="org.eclipse.wb.xwt.feature:1.5.2.r42x201302112106"/>
 	</list>
+>>>>>>> master
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>

@@ -1450,6 +1450,8 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2014-10-26 13:29:14.726
 !MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+<<<<<<< HEAD
+=======
 
 !ENTRY org.eclipse.ui 4 4 2014-10-26 16:59:03.492
 !MESSAGE The proxied delegate for 'org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate' could not be loaded
@@ -3727,3 +3729,4 @@ java.lang.ClassCastException: java.lang.Object cannot be cast to org.eclipse.e4.
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+>>>>>>> master

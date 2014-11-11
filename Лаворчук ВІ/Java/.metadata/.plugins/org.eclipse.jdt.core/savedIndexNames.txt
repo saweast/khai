@@ -1,4 +1,9 @@
 INDEX VERSION 1.126+C:\Users\Vadim\Desktop\khai\Лаворчук ВІ\Java\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
+3985886414.index
+1945590125.index
+2593455192.index
+=======
 2967717422.index
 3238474110.index
 3985886414.index
@@ -31,3 +36,4 @@ INDEX VERSION 1.126+C:\Users\Vadim\Desktop\khai\Лаворчук ВІ\Java\.metadata\.plug
 3196267076.index
 560545320.index
 204471957.index
+>>>>>>> master

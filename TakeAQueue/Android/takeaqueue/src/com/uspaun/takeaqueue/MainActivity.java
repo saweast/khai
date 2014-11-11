@@ -9,6 +9,7 @@ import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -47,11 +48,14 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import android.R.string;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -59,7 +63,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.apache.http.HttpEntity;
@@ -78,11 +85,11 @@ import org.apache.http.util.EntityUtils;
 
 public class MainActivity extends Activity {
 
-	String URL;
     // XML node keys
     static final String KEY_PEOPLES = "people"; // parent node
     static final String KEY_ID = "ID";
     static final String KEY_NAME = "Name";
+    static final String KEY_IMAGE = "Image";
     //static final String KEY_NAME = "name";
     //static final String KEY_ITEM = "item";
 	
@@ -93,7 +100,10 @@ public class MainActivity extends Activity {
 	TextView tvInfo, tvContent;
 	String pathTo;
 	ListView lv;
+	LinearLayout llMain;
+	int wrapContent = LinearLayout.LayoutParams.WRAP_CONTENT;
 	final ArrayList<String> Names = new ArrayList<String>();
+	final ArrayList<String> Images = new ArrayList<String>();
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +113,7 @@ public class MainActivity extends Activity {
 		btnCreate = (Button) findViewById(R.id.btnCreate);
 		etName = (EditText) findViewById(R.id.etName);
 		btnDownload = (Button) findViewById(R.id.button1);
+		//llMain = (LinearLayout) findViewById(R.id.llMain);
 		//new PostDataAsyncTask().execute();
 	}
     private static final String TAG = "MainActivity.java";
@@ -182,10 +193,33 @@ public class MainActivity extends Activity {
 		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Names);
 		lv.setAdapter(adapter);
 		adapter.notifyDataSetChanged();
-	    Log.v(TAG, "Вивели на екран");
+		Log.v(TAG, "Вивели текст");
+		/*for(int i=0; i<Images.size(); i++)
+		{
+			ImageView iv = new ImageView(this);
+			//String currIMG = Images.get(i);
+		      //Uri currImgUri = Uri.parse(currIMG);
+			//iv.setImageURI(currImgUri);
+			try {
+				iv.setImageDrawable(grabImageFromUrl(Images.get(i)));
+			} catch (Exception e) {
+				
+			}
+			RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+			    RelativeLayout.LayoutParams.WRAP_CONTENT,
+			    RelativeLayout.LayoutParams.WRAP_CONTENT);
+			lp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+			llMain.addView(iv, lp);
+		}*/
+		
 	}
 
-	public void parseXML()
+	private Drawable grabImageFromUrl(String url) throws Exception {
+		return Drawable.createFromStream(
+				(InputStream) new URL(url).getContent(), "src");
+	}
+	
+	public void parseXML(String URL)
 	{
 		XMLParser parser = new XMLParser();
 		Log.v(TAG, "створили екземпляр");
@@ -199,12 +233,23 @@ public class MainActivity extends Activity {
 		for (int i = 0; i < nl.getLength(); i++) {
 			Element e = (Element) nl.item(i);
 		    Names.add(i, parser.getValue(e, KEY_NAME));
+		    Images.add(i, parser.getValue(e, KEY_IMAGE));
 		}
+		ImageView image1 = (ImageView) findViewById(R.id.imageView1);
+		try {
+			image1.setImageDrawable(grabImageFromUrl(Images.get(1)));
+		} catch (Exception e) {
+			
+		}
+	    Log.v(TAG, "Вивели зображення");
 	}
 
 	public class PostDataAsyncTask extends AsyncTask<String, String, String> {
 		 
-        protected void onPreExecute() {
+        //public PostFiles FilesToPost;
+        public String URL;
+		
+		protected void onPreExecute() {
             super.onPreExecute();
             // do stuff before posting data
         }
@@ -212,7 +257,7 @@ public class MainActivity extends Activity {
         @Override
         protected String doInBackground(String... strings) {
             try {
-                    postFile();
+                    postFile(URL);
                  
             } catch (NullPointerException e) {
                 e.printStackTrace();
@@ -230,7 +275,9 @@ public class MainActivity extends Activity {
 	
 	public class GetDataFromServerAsyncTask extends AsyncTask<String, String, String> {
 		 
-        protected void onPreExecute() {
+        public String getURL;
+		
+		protected void onPreExecute() {
             super.onPreExecute();
             // do stuff before posting data
         }
@@ -238,7 +285,7 @@ public class MainActivity extends Activity {
         @Override
         protected String doInBackground(String... strings) {
             try {
-                    parseXML();
+                    parseXML(getURL);
                  
             } catch (NullPointerException e) {
                 e.printStackTrace();
@@ -253,41 +300,46 @@ public class MainActivity extends Activity {
         }
     }
 	
-    private void postFile()
+	
+    private void postFile(String URL)
     {
-        try{
+    	try{
              
-            // the file to be posted
+            MultipartEntity reqEntity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
+    		// the file to be posted
             File MySDCard = Environment.getExternalStorageDirectory();
-            String textFile = MySDCard.toString() + "/TakeAQueue/file.xml";
-            Log.v(TAG, "textFile: " + textFile);
-             
-            // the URL where the file will be posted
-            String postReceiverUrl = "http://uspaun.pp.ua/upload.php";
-            Log.v(TAG, "postURL: " + postReceiverUrl);
+            String textFile = MySDCard.toString() + "/TakeAQueue/file.xml";       
+            String imageLink = MySDCard.toString() + "/TakeAQueue/image1.png";
+            
+            Log.v(TAG, "XMLFileLink: " + textFile + "\nImageFileLink: " + imageLink);
+            Log.v(TAG, "postURL: " + URL);
              
             // new HttpClient
             HttpClient httpClient = new DefaultHttpClient();
-             
-            // post header
-            HttpPost httpPost = new HttpPost(postReceiverUrl);
-             
+            //HttpPost httpPost = new HttpPost(PostFiles.URL);
+            HttpPost httpPost = new HttpPost(URL);
             File file = new File(textFile);
             FileBody fileBody = new FileBody(file);
-     
-            MultipartEntity reqEntity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
+            File fileImage = new File(imageLink);
+            FileBody fileBodyImage = new FileBody(fileImage);
+            
             reqEntity.addPart("file", fileBody);
+            reqEntity.addPart("uploadfile", fileBodyImage);
+//            File file;
+//            FileBody fileBody;
+//            for(int i=0; i<PostFiles.Files.size(); i++)
+//            {
+//                file = new File(PostFiles.Files.get(i));
+//                fileBody = new FileBody(file);
+//                reqEntity.addPart(PostFiles.Names.get(i), fileBody);
+//            }
             httpPost.setEntity(reqEntity);
-             
-            // execute HTTP post request
             HttpResponse response = httpClient.execute(httpPost);
             HttpEntity resEntity = response.getEntity();
      
             if (resEntity != null) {
-                 
                 String responseStr = EntityUtils.toString(resEntity).trim();
                 Log.v(TAG, "Response: " +  responseStr);
-                 
                 // you can add an if statement here and do other actions based on the response
             }
              
@@ -299,17 +351,25 @@ public class MainActivity extends Activity {
     }
 	
 	public void onBtnDownloadClick(View view) {
-		URL = "http://uspaun.pp.ua/download.php";
 		GetDataFS = new GetDataFromServerAsyncTask();
+		GetDataFS.getURL = "http://uspaun.pp.ua/download.php";
 		GetDataFS.execute();
 	    showResult();
 	    Log.v(TAG, "Викликали showResult()");
 	}
 	
 	public void onMyButtonClick(View view) {
+//        File MySDCard = Environment.getExternalStorageDirectory();
+//        String textFile = MySDCard.toString() + "/TakeAQueue/file.xml";       
+//        String imageLink = MySDCard.toString() + "/TakeAQueue/image1.png";
 		createXML(etName.getText().toString());
 		mt = new PostDataAsyncTask();
+		mt.URL = "http://uspaun.pp.ua/upload.php";
+		//mt.FilesToPost.URL = "http://uspaun.pp.ua/upload.php";
+		//mt.FilesToPost.Set("file", textFile);
+		//mt.FilesToPost.Set("uploadfile", imageLink);
 		mt.execute();
+		Log.v(TAG, "Викликали postFile()");
 	}
 
 }

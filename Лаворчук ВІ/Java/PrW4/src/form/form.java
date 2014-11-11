@@ -14,9 +14,12 @@ public class form {
 	private static Text text;
 	private static Text text_1;
 	private static Text text_2;
+<<<<<<< HEAD
+=======
 	private static Text text_3;
 	private static Text text_4;
 	private static Text text_5;
+>>>>>>> master
 
 	/**
 	 * Launch the application.
@@ -54,6 +57,12 @@ public class form {
 			public void widgetSelected(SelectionEvent e) {
 				String str = text.getText();
 				int k = Integer.parseInt(text_1.getText());
+<<<<<<< HEAD
+				char[] buf = new char[k];
+				str.getChars(0, k, buf, 0);
+				str.StringBuffer.
+				text_2.setTextChars(buf);
+=======
 				char [] buf = new char [k];
 				str.getChars(0, k, buf, 0);
 <<<<<<< HEAD
@@ -66,11 +75,14 @@ public class form {
 				str.StringBuffer.
 				text_2.setTextChars(buf);
 >>>>>>> master
+>>>>>>> master
 			}
 		});
 		btnNewButton.setBounds(10, 79, 158, 25);
 		btnNewButton.setText("\u041F\u0435\u0440\u0435\u043D\u0435\u0441\u0442\u0438");
 		
+<<<<<<< HEAD
+=======
 		Group group_1 = new Group(shell, SWT.NONE);
 		group_1.setText("\u0427\u0430\u0441\u0442\u0438\u043D\u0430 2");
 		group_1.setBounds(196, 10, 228, 241);
@@ -135,6 +147,7 @@ public class form {
 		
 		
 		
+>>>>>>> master
 		
 
 		shell.open();
