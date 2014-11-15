@@ -21,6 +21,8 @@ header {
     top: 0;
     width: 100.5%;
     padding-bottom: 15px;
+    border-bottom: 3px solid white;
+    z-index: 1;
 }
 header h1 {
 	font-size: 2em;	
@@ -121,10 +123,11 @@ button:focus {
 	color: #c3bfbe;
 	font-size: 0.9em;
 }
-.content {
+.main {
 	margin-top: 130px;
 	display: inline-block;
 	margin-bottom: 50px;
+	display: none;
 }
 button::-moz-focus-inner { 
 	border: none; 
@@ -132,6 +135,84 @@ button::-moz-focus-inner {
 	margin:0; 
 }
 
+.resume {
+	margin-top: 90px;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.resume h2 {
+	text-transform: uppercase;
+	color: white;
+	font-size: 4em;
+}
+.resume .ul-resume {
+	display: inline-block;
+    width: 60%;
+}
+.resume .ul-resume li {
+	margin-left: -35px;
+	margin-top: 30px;
+	padding: 50px 0 50px 150px;
+	border-top: 1px solid #c3bfbe;
+	list-style: none;
+	position: relative;
+}
+.resume .ul-resume li:before {
+	content: " ";
+	height: 130px;
+	width: 130px;
+	background-color: #e83556;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	border-radius: 50%;
+}
+.resume .ul-resume li:after {
+	color: white;
+	font-size: 1.5em;
+    height: 50px;
+    left: 20px;
+    position: absolute;
+    top: 65px;
+    width: 50px;
+}
+.resume .ul-resume li:nth-child(1):after {	
+    content: "Personal attributes";
+}
+.resume .ul-resume li:nth-child(2):after {
+    content: "Employment history";
+    
+}
+.resume .ul-resume li:nth-child(3):after {
+    content: "Educational qualifications";
+}
+.resume .ul-resume li dl dd{
+	margin: 0;
+	margin-bottom: 20px;
+}
+.resume .ul-resume  li dl dt {
+	margin: 0;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+aside.sup {
+	display: inline-block;
+    float: right;
+    margin-top: 50px;
+    width: 25%;
+}
+aside.sup div {
+	position: relative;
+}
+aside.sup div:nth-child(1):after {
+	content: " ";
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #e83556;
+	left: 0;
+	top: 0;
+}
 footer {
 	color: white;
 	background-color: rgba(232, 53, 86, 1);
