@@ -6,10 +6,12 @@ body {
 }
 body {
 	margin-bottom: 0px;
+	
 }
 
 .wrapper {
 	margin: 3% 20% 0 20%;
+	
 }
 header {
 	background-color: rgba(232, 53, 86, 1);
@@ -124,7 +126,7 @@ button:focus {
 	font-size: 0.9em;
 }
 .main {
-	margin-top: 130px;
+	margin-top: 150px;
 	display: inline-block;
 	margin-bottom: 50px;
 	display: none;
@@ -138,7 +140,9 @@ button::-moz-focus-inner {
 .resume {
 	margin-top: 90px;
 	display: inline-block;
-	margin-bottom: 50px;
+	margin-bottom: 50px; 
+
+	display: none;
 }
 .resume h2 {
 	text-transform: uppercase;
@@ -216,7 +220,6 @@ aside.sup ul li{
 	list-style: none;
 	margin: 0;
 }
-
 aside.sup div:before {
 	content: " ";
 	height: 50px;
@@ -236,16 +239,109 @@ aside.sup div:nth-child(2):before {
 	background-image: url("../images/earth.png");
 }
 
+.contact {
+	margin-top: 150px;
+	
+}
+.contact h2 {
+	color: white;
+    display: inline-block;
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 50px;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+.contact form {
+	float: right;
+    margin-bottom: 50px;
+    width: 45%;
+}
+.contact form input,
+.contact form textarea {
+	background-color: #e83556;
+    border: medium none;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.contact form input {
+	height: 25px;
+}
+.contact form textarea {
+	font-size: 1.3em;
+    height: 120px;
+    resize: vertical;
+}
+.contact form button {
+	background-color: rgba(97, 207, 211, 1);
+    border-radius: 5px;
+    float: right;
+    font-size: 1.2em;
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+}
+.info {
+	display: inline-block;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.bolder {
+	font-size: 1.2em;
+}
+.info ul {
+	display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: -10px;
+    height: 35px
+}
+.info ul li {
+	float: left;
+    list-style: outside none none;
+    margin-left: 10px;
+}
+.info p {
+	clear: both;
+}
+.info p:nth-child(1) {
+	margin-top: 10px;
+}
+.info ul li button {
+	background-color: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.info ul li:nth-child(1) button {
+    background-image: url("../images/facebook.jpeg");    
+}
+.info ul li:nth-child(2) button {
+    background-image: url("../images/twitter.png");    
+}
+.info ul li:nth-child(3) button {
+    background-image: url("../images/google.jpeg");    
+}
 footer {
+	display: inline-block;
 	color: white;
 	background-color: rgba(232, 53, 86, 1);
 	margin: 0 -34.5%;
     width: 168.8%;
     border-top: 3px solid white;
+    
 }
 .footer-nav {
-	margin: 50px 20% 0 20%;
-	height: 100px;
+	height: 80px;
+    margin: 30px 20% 0;
 }
 .footer-nav div {
 	float: left;
@@ -283,9 +379,7 @@ footer {
 	top: 0;
 	left: 20px;
 }
-.mail dd{
-	font-size: 0.8em;
-}
+
 .phone > dl, .mail > dl, .soc > dl {
 	margin-left: 80px;
     margin-top: 5px;
@@ -323,4 +417,17 @@ body:after{
     position: fixed;
     top: 94%;
     width: 50px;
+}
+html, body {
+	height: 100%;
+}
+.content {
+	min-height: 100%;
+}
+.hFooter {
+	height: 130px;
+}
+footer {
+	height: 130px;
+	margin-top: -130px;
 }
