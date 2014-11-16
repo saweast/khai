@@ -1,0 +1,20 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+LCID=0x419 0x0 0x0 ; Русский
+REPORT=Yes
+DEFFONT=Tahoma,8,0
+HLP=conv.hlp
+
+[FILES]
+conv.rtf
+
+[MAP]
+IDH_1=1               ; Конвертор
+IDH_2=2               ; Исходные данные
+IDH_3=3               ; Цена
+IDH_4=4               ; Курс
+IDH_5=5               ; Ввод чисел
+
+[WINDOWS]
+main="Конвертор",(736,46,264,208),27904,(r14876671),(r12632256),f3

@@ -1,8 +1,0 @@
-package com.uspaun.takeaqueue;
-
-import java.util.ArrayList;
-
-public class PostFiles {
-	public ArrayList<String> Names = new ArrayList<String>();
-	public ArrayList<String> Links = new ArrayList<String>();
-}

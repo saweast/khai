@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchHistory>
+<<<<<<< HEAD:Лаворчук ВІ/Java/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+<launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
+<mruHistory>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;form (2)&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;form (1)&quot;/&gt;&#13;&#10;"/>
+</mruHistory>
+=======
+<launchGroup id="org.eclipse.ui.externaltools.launchGroup">
+<mruHistory/>
+>>>>>>> 905f2c7feb6ff69f2adc3d56922c01e948561334:LavorchukVI/Java/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+<favorites/>
+</launchGroup>
+<launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
+<mruHistory/>
+<favorites/>
+</launchGroup>
+<launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
+<mruHistory>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;form (1)&quot;/&gt;&#10;"/>
+</mruHistory>
+<favorites/>
+</launchGroup>
+<launchGroup id="org.eclipse.debug.ui.launchGroup.run">
+<mruHistory>
+<<<<<<< HEAD:Лаворчук ВІ/Java/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;form (2)&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;form (1)&quot;/&gt;&#13;&#10;"/>
+=======
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;form (1)&quot;/&gt;&#10;"/>
+>>>>>>> 905f2c7feb6ff69f2adc3d56922c01e948561334:LavorchukVI/Java/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+</mruHistory>
+<favorites/>
+</launchGroup>
+</launchHistory>

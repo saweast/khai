@@ -1,0 +1,52 @@
+@charset "utf-8";
+#nav1, #nav1 ul, #nav1 li {
+  margin: 0;
+  padding: 0;
+}
+#nav1, #nav1 ul {
+  background: rgb(46,95,122);
+}
+#nav1 {
+  position: relative;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+#nav1 ul {
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+#nav1 li:hover ul { 
+  display: block;
+}
+#nav1 li {
+  display: table-cell;
+  text-align: center;
+}
+#nav1 ul li {
+  display: block;
+  text-align: left;
+}
+#nav1 .right {
+  direction: rtl;
+}
+#nav1 .right ul {
+  right: 0;
+}
+#nav1 .right li {
+  direction: ltr;
+}
+#nav1 a {
+  display: block;
+  padding: 3px 0;
+  color: #fff;
+  text-decoration: none;
+}
+#nav1 ul a {
+  padding: 3px 15px;
+}
+#nav1 li:hover {
+  background: rgb(96,145,172);
+}
+

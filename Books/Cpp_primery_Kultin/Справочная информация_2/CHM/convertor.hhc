@@ -1,0 +1,30 @@
+<!-- Сгенерирован макросом MakeHTML, (с) Культин Н.Б., 2000 -->
+<HTML><HEAD></HEAD>
+<BODY><OBJECT type="text/site properties">
+<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Конвертор">
+<param name="Local" value="convertor_01.htm">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Исходные данные">
+<param name="Local" value="convertor_02.htm">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Цена">
+<param name="Local" value="convertor_03.htm">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Курс">
+<param name="Local" value="convertor_04.htm">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Ввод чисел">
+<param name="Local" value="convertor_05.htm">
+</OBJECT></UL>
+</BODY>
+</HTML>
+

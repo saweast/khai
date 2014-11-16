@@ -1,0 +1,10 @@
+[OPTIONS]
+Contents file =puzzle.hhc
+Title=Собери картинку
+[FILES]
+puzzle_01.htm
+puzzle_02.htm
+puzzle_03.htm
+[MAP]
+#include puzzle.h
+
