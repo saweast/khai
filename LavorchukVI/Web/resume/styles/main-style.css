@@ -203,16 +203,39 @@ aside.sup {
 }
 aside.sup div {
 	position: relative;
+	margin-bottom: 60px;
 }
-aside.sup div:nth-child(1):after {
+aside.sup h3 {
+	border-bottom: 1px solid #c3bfbe;
+	padding-bottom: 20px;
+}
+aside.sup ul {
+	padding-left: 0px;
+}
+aside.sup ul li{
+	list-style: none;
+	margin: 0;
+}
+
+aside.sup div:before {
 	content: " ";
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
 	background-color: #e83556;
-	left: 0;
-	top: 0;
+	position: absolute;
+	left: -20px;
+	top: -55px;
+	background-position: 45% center;
+	background-repeat: no-repeat;
 }
+aside.sup div:nth-child(1):before {
+	background-image: url("../images/i.png");
+}
+aside.sup div:nth-child(2):before {
+	background-image: url("../images/earth.png");
+}
+
 footer {
 	color: white;
 	background-color: rgba(232, 53, 86, 1);
@@ -291,7 +314,6 @@ dd > button.fb, dd > button.tw, dd > button.g {
 }
 .soc dl dd {
 	float: left;
-    /*margin: 0 0 0 -20px;*/
 }
 body:after{
 	content: "©WIX.com";
