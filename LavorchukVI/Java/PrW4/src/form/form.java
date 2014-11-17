@@ -14,17 +14,10 @@ public class form {
 	private static Text text;
 	private static Text text_1;
 	private static Text text_2;
-<<<<<<< HEAD
-=======
 	private static Text text_3;
 	private static Text text_4;
 	private static Text text_5;
->>>>>>> master
 
-	/**
-	 * Launch the application.
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		Display display = Display.getDefault();
 		Shell shell = new Shell();
@@ -57,97 +50,56 @@ public class form {
 			public void widgetSelected(SelectionEvent e) {
 				String str = text.getText();
 				int k = Integer.parseInt(text_1.getText());
-<<<<<<< HEAD
+
 				char[] buf = new char[k];
-				str.getChars(0, k, buf, 0);
-				str.StringBuffer.
-				text_2.setTextChars(buf);
-=======
-				char [] buf = new char [k];
-				str.getChars(0, k, buf, 0);
-<<<<<<< HEAD
+				str.getChars(0, k, buf, 0);			
+
 				String strBuf=str.substring(k);
 				str=strBuf;
 				strBuf = String.valueOf(buf);
 				str += strBuf;
 				text_2.setText(str);
-=======
-				str.StringBuffer.
-				text_2.setTextChars(buf);
->>>>>>> master
->>>>>>> master
+
 			}
 		});
 		btnNewButton.setBounds(10, 79, 158, 25);
 		btnNewButton.setText("\u041F\u0435\u0440\u0435\u043D\u0435\u0441\u0442\u0438");
 		
-<<<<<<< HEAD
-=======
 		Group group_1 = new Group(shell, SWT.NONE);
 		group_1.setText("\u0427\u0430\u0441\u0442\u0438\u043D\u0430 2");
 		group_1.setBounds(196, 10, 228, 241);
 		
+		Label label_1 = new Label(group_1, SWT.NONE);
+		label_1.setBounds(10, 23, 55, 15);
+		label_1.setText("\u0421\u043B\u043E\u0432\u043E 1:");
+		
+		Label label_2 = new Label(group_1, SWT.NONE);
+		label_2.setBounds(10, 44, 55, 15);
+		label_2.setText("\u0421\u043B\u043E\u0432\u043E 2:");
+		
+		Label lblNewLabel = new Label(group_1, SWT.NONE);
+		lblNewLabel.setBounds(10, 65, 55, 15);
+		lblNewLabel.setText("\u0421\u043B\u043E\u0432\u043E 3:");
+		
 		text_3 = new Text(group_1, SWT.BORDER);
-		text_3.setBounds(10, 25, 76, 21);
+		text_3.setBounds(71, 17, 76, 21);
 		
 		text_4 = new Text(group_1, SWT.BORDER);
-		text_4.setBounds(10, 54, 76, 21);
+		text_4.setText("");
+		text_4.setBounds(71, 38, 76, 21);
 		
 		text_5 = new Text(group_1, SWT.BORDER);
-		text_5.setBounds(10, 81, 76, 21);
+		text_5.setBounds(71, 59, 76, 21);
 		
-		final Label label_1 = new Label(group_1, SWT.NONE);
-		label_1.setBounds(111, 81, 92, 15);
+		Button button = new Button(group_1, SWT.NONE);
+		button.setBounds(10, 86, 75, 25);
+		button.setText("\u0427\u0435\u0440\u0435\u0437 \u0410.");
 		
-		Button btnNewButton_1 = new Button(group_1, SWT.NONE);
-		btnNewButton_1.addSelectionListener(new SelectionAdapter() {
-			public String removeChar(String s, char c) {
-				   String r = "";
-				   for (int i = 0; i < s.length(); i++) {
-					   if (s.charAt(i) != c) r += s.charAt(i);
-				   }
-				   return r;
-				}
-			public void widgetSelected(SelectionEvent e) {				
-				String str1 = text_3.getText(),
-						str2 = text_4.getText(),
-						//str3 = text_5.getText(),
-						buffer = "",
-						result = "";
-				int i,j;
-				for (i = 0; i < str1.length(); i++) {
-					for (j = 0; j < str2.length(); j++) {
-						if (str1.substring(i, i + 1).equalsIgnoreCase(str2.substring(j, j + 1))){
-							buffer = str2.substring(j, j + 1);
-							char[] asuka = buffer.toCharArray();
-							result = removeChar(result, asuka[buffer.length()-1]);
-							buffer = "";							
-						}
-						else {
-							if (buffer.equalsIgnoreCase(str1.substring(i, i + 1))){
-								continue;
-							}
-							else {
-								buffer = str2.substring(j, j + 1);
-							}
-							result += buffer;
-						}
-					}
-				}
-				label_1.setText(result);
-				result = "";
-			}
-		});
-		btnNewButton_1.setBounds(10, 119, 75, 25);
-		btnNewButton_1.setText("New Button");
+		Button button_1 = new Button(group_1, SWT.NONE);
+		button_1.setBounds(10, 117, 75, 25);
+		button_1.setText("\u0427\u0435\u0440\u0435\u0437 \u0411.");
 		
-		Button btnNewButton_2 = new Button(group_1, SWT.NONE);
-		btnNewButton_2.setBounds(11, 152, 75, 25);
-		btnNewButton_2.setText("New Button");
-		
-		
-		
->>>>>>> master
+
 		
 
 		shell.open();
