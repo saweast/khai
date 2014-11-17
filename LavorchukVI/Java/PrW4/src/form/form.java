@@ -9,14 +9,13 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.List;
+import org.eclipse.jface.viewers.ListViewer;
 
 public class form {
 	private static Text text;
 	private static Text text_1;
 	private static Text text_2;
-	private static Text text_3;
-	private static Text text_4;
-	private static Text text_5;
 
 	public static void main(String[] args) {
 		Display display = Display.getDefault();
@@ -70,34 +69,30 @@ public class form {
 		group_1.setBounds(196, 10, 228, 241);
 		
 		Label label_1 = new Label(group_1, SWT.NONE);
-		label_1.setBounds(10, 23, 55, 15);
-		label_1.setText("\u0421\u043B\u043E\u0432\u043E 1:");
+		label_1.setBounds(10, 26, 88, 15);
+		label_1.setText("\u0412\u0432\u0435\u0434\u0456\u0442\u044C \u0440\u0435\u0447\u0435\u043D\u043D\u044F");
 		
-		Label label_2 = new Label(group_1, SWT.NONE);
-		label_2.setBounds(10, 44, 55, 15);
-		label_2.setText("\u0421\u043B\u043E\u0432\u043E 2:");
+		ListViewer listViewer = new ListViewer(group_1, SWT.BORDER | SWT.V_SCROLL);
+		final List list = listViewer.getList();
+		list.setItems(new String[] {});
+		list.setToolTipText("");
+		list.setBounds(10, 47, 208, 118);
 		
-		Label lblNewLabel = new Label(group_1, SWT.NONE);
-		lblNewLabel.setBounds(10, 65, 55, 15);
-		lblNewLabel.setText("\u0421\u043B\u043E\u0432\u043E 3:");
+		Button btnJustDoIt = new Button(group_1, SWT.NONE);
+		btnJustDoIt.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				String str = "";
+				str = list.toString();
+				for (int i = 0; i < str.length(); i++) {
+					
+				}
+			}
+		});
+		btnJustDoIt.setBounds(10, 171, 75, 25);
+		btnJustDoIt.setText("Just do it!");
 		
-		text_3 = new Text(group_1, SWT.BORDER);
-		text_3.setBounds(71, 17, 76, 21);
 		
-		text_4 = new Text(group_1, SWT.BORDER);
-		text_4.setText("");
-		text_4.setBounds(71, 38, 76, 21);
-		
-		text_5 = new Text(group_1, SWT.BORDER);
-		text_5.setBounds(71, 59, 76, 21);
-		
-		Button button = new Button(group_1, SWT.NONE);
-		button.setBounds(10, 86, 75, 25);
-		button.setText("\u0427\u0435\u0440\u0435\u0437 \u0410.");
-		
-		Button button_1 = new Button(group_1, SWT.NONE);
-		button_1.setBounds(10, 117, 75, 25);
-		button_1.setText("\u0427\u0435\u0440\u0435\u0437 \u0411.");
 		
 
 		
