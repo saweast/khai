@@ -179,16 +179,75 @@ namespace time
             {
                 Console.WriteLine("Поточний час:\n" + getHoursClockTime() + " : " + getMinutesClockTime() + " : " + getSecondsClockTime());
             }
+<<<<<<< HEAD:Лаворчук ВІ/ООП/PrW2/time/time/Program.cs
+            // перегрузка операторів
+            public static clockTime operator +(clockTime t1, clockTime t2) 
+            {
+                int h = 0,
+                    m = 0,
+                    s = 0;
+                if ((t1.getSecondsClockTime() + t2.getSecondsClockTime()) > 59)
+                {
+                    s = t1.getSecondsClockTime() + t2.getSecondsClockTime() - 60;
+                    m++;
+                }
+                else
+                    m = t1.getSecondsClockTime() + t2.getSecondsClockTime();
+
+                if ((t1.getMinutesClockTime() + t2.getMinutesClockTime()) > 59)
+                {
+                    m += t1.getMinutesClockTime() + t2.getMinutesClockTime() - 60;
+                    h++;
+                }
+                else
+                    m = t1.getMinutesClockTime() + t2.getMinutesClockTime();
+
+                if ((t1.getHoursClockTime() + t2.getHoursClockTime()) > 23)
+                {
+                    h += t1.getHoursClockTime() + t2.getHoursClockTime() - 24;                    
+                }
+                else
+                    h = t1.getHoursClockTime() + t2.getHoursClockTime();
+
+                return new clockTime(h, m, s);
+            }
+            public static clockTime operator +(clockTime t1, int number)
+            {
+                int s = t1.seconds,
+                    m = t1.minutes,
+                    h = t1.hours;
+                if ((s + number) > 60)
+                {
+                    s = s + number - 60;
+                    m++;
+                }
+                s = s + number;
+
+                return new clockTime(h, m, s);    
+            }
+=======
 
             
+>>>>>>> 905f2c7feb6ff69f2adc3d56922c01e948561334:LavorchukVI/OOP/PrW2/time/time/Program.cs
             
         }
         static void Main(string[] args)
         {
+<<<<<<< HEAD:Лаворчук ВІ/ООП/PrW2/time/time/Program.cs
+            clockTime myClock = new clockTime(0, 0, 0);
+            //myClock.getClockTime();            
+            clockTime hisClock = new clockTime(myClock);
+            //hisClock.getClockTime();
+            //insert methods:D
+            myClock = myClock + 5;
+            myClock.getClockTime();    
+            
+=======
             clockTime myClock = new clockTime(15, 30, 47);
             myClock.getClockTime();            
             clockTime hisClock = new clockTime(myClock);
             hisClock.getClockTime();
+>>>>>>> 905f2c7feb6ff69f2adc3d56922c01e948561334:LavorchukVI/OOP/PrW2/time/time/Program.cs
             Console.ReadKey();
         }
     }

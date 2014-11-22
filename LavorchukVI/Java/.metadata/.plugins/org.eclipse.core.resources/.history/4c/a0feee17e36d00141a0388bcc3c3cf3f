@@ -1,0 +1,145 @@
+package form;
+
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class form {
+	private static Text text;
+	private static Text text_1;
+	private static Text text_2;
+	private static Text text_3;
+	private static Text text_4;
+	private static Text text_5;
+
+	public static void main(String[] args) {
+		Display display = Display.getDefault();
+		Shell shell = new Shell();
+		shell.setSize(450, 300);
+		shell.setText("SWT Application");
+		
+		Group group = new Group(shell, SWT.NONE);
+		group.setText("\u0427\u0430\u0441\u0442\u0438\u043D\u0430 1");
+		group.setBounds(10, 10, 180, 154);
+		
+		text_1 = new Text(group, SWT.BORDER);
+		text_1.setBounds(56, 47, 31, 21);
+		
+		Label lblK = new Label(group, SWT.NONE);
+		lblK.setBounds(10, 53, 55, 15);
+		lblK.setText("k");
+		
+		Label label = new Label(group, SWT.NONE);
+		label.setBounds(10, 26, 41, 15);
+		label.setText("\u0421\u043B\u043E\u0432\u043E");
+		
+		text = new Text(group, SWT.BORDER);
+		text.setBounds(56, 20, 112, 21);
+		
+		text_2 = new Text(group, SWT.BORDER);
+		text_2.setBounds(31, 120, 112, 21);
+		
+		Button btnNewButton = new Button(group, SWT.NONE);
+		btnNewButton.addSelectionListener(new SelectionAdapter() {
+			public void widgetSelected(SelectionEvent e) {
+				String str = text.getText();
+				int k = Integer.parseInt(text_1.getText());
+
+				char[] buf = new char[k];
+				str.getChars(0, k, buf, 0);
+				
+
+				
+
+				String strBuf=str.substring(k);
+				str=strBuf;
+				strBuf = String.valueOf(buf);
+				str += strBuf;
+				text_2.setText(str);
+
+			}
+		});
+		btnNewButton.setBounds(10, 79, 158, 25);
+		btnNewButton.setText("\u041F\u0435\u0440\u0435\u043D\u0435\u0441\u0442\u0438");
+		
+
+		Group group_1 = new Group(shell, SWT.NONE);
+		group_1.setText("\u0427\u0430\u0441\u0442\u0438\u043D\u0430 2");
+		group_1.setBounds(196, 10, 228, 241);
+		
+		text_3 = new Text(group_1, SWT.BORDER);
+		text_3.setBounds(10, 25, 76, 21);
+		
+		text_4 = new Text(group_1, SWT.BORDER);
+		text_4.setBounds(10, 54, 76, 21);
+		
+		text_5 = new Text(group_1, SWT.BORDER);
+		text_5.setBounds(10, 81, 76, 21);
+		
+		final Label label_1 = new Label(group_1, SWT.NONE);
+		label_1.setBounds(111, 81, 92, 15);
+		
+		Button btnNewButton_1 = new Button(group_1, SWT.NONE);
+		btnNewButton_1.addSelectionListener(new SelectionAdapter() {
+			public String removeChar(String s, char c) {
+				   String r = "";
+				   for (int i = 0; i < s.length(); i++) {
+					   if (s.charAt(i) != c) r += s.charAt(i);
+				   }
+				   return r;
+				}
+			public void widgetSelected(SelectionEvent e) {				
+				String str1 = text_3.getText(),
+						str2 = text_4.getText(),
+						//str3 = text_5.getText(),
+						buffer = "",
+						result = "";
+				int i,j;
+				for (i = 0; i < str1.length(); i++) {
+					for (j = 0; j < str2.length(); j++) {
+						if (str1.substring(i, i + 1).equalsIgnoreCase(str2.substring(j, j + 1))){
+							buffer = str2.substring(j, j + 1);
+							char[] asuka = buffer.toCharArray();
+							result = removeChar(result, asuka[buffer.length()-1]);
+							buffer = "";							
+						}
+						else {
+							if (buffer.equalsIgnoreCase(str1.substring(i, i + 1))){
+								continue;
+							}
+							else {
+								buffer = str2.substring(j, j + 1);
+							}
+							result += buffer;
+						}
+					}
+				}
+				label_1.setText(result);
+				result = "";
+			}
+		});
+		btnNewButton_1.setBounds(10, 119, 75, 25);
+		btnNewButton_1.setText("New Button");
+		
+		Button btnNewButton_2 = new Button(group_1, SWT.NONE);
+		btnNewButton_2.setBounds(11, 152, 75, 25);
+		btnNewButton_2.setText("New Button");
+		
+
+		
+
+		shell.open();
+		shell.layout();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+	}
+}
