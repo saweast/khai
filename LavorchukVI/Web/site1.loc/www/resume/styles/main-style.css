@@ -129,7 +129,7 @@ button:focus {
 	margin-top: 150px;
 	display: inline-block;
 	margin-bottom: 50px;
-	display: none;
+	/*display: none;*/
 }
 button::-moz-focus-inner { 
 	border: none; 
