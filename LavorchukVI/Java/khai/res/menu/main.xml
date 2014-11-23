@@ -1,4 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.khai.MainActivity" >
 
@@ -7,5 +8,20 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/action_settings"/>
+=======
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.khai.lol.MainActivity" >
+
+    <item
+        android:id="@+id/action_example"
+        android:title="@string/action_example"
+        app:showAsAction="withText|ifRoom"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+>>>>>>> 915f461cba7edb0f8aab16e52291ff014aa564bc
 
 </menu>

@@ -1,0 +1,476 @@
+@import("reset.css");
+body {
+	font-family: DroidSerif;
+	color: #606060;
+	background-color: #eaeaea;
+}
+body {
+	margin-bottom: 0px;
+	
+}
+
+.wrapper {
+	margin: 3% 20% 0 20%;
+	
+}
+header {
+	background-color: rgba(232, 53, 86, 1);
+    color: white;
+    margin: 0 -20.5%;
+    padding: 0 -88px 10px 290px;
+    padding-left: 300px;
+    position: fixed;
+    top: 0;
+    width: 100.5%;
+    padding-bottom: 15px;
+    border-bottom: 3px solid white;
+    z-index: 1;
+}
+header h1 {
+	font-size: 2em;	
+}
+header p {
+	margin: -20px 0 0 0;
+	font-style: italic;
+	font-size: 1.2em;
+}
+button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	display: inline-block;
+	transition: 0.3s linear 0s;
+}
+button:focus {
+	outline: none;
+	border: none;
+}
+.main-nav {
+	margin: 0 20%;
+	width: 50%;
+}
+.main-nav button {	
+	float: left;
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-left: 8%;
+	font-weight: bold;
+	color: #c3bfbe;
+	cursor: pointer;
+}
+.main-nav button:hover {
+	color: #61cfd3;
+}
+.main-nav button:focus {
+	color: #61cfd3;
+}
+
+
+.i-am {
+	display: inline-block;
+	margin: 0 0 0 -5%;
+	height: 400px;
+	width: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url("../images/i_am.jpg");
+	background-position: 50% 20%;
+}
+.inside {
+	display: inline-block;
+	float: right;
+	width: 50%
+}
+.inside h2 {
+	font-size: 4em;
+	margin: 0;
+}
+.inside .inside-nav {
+	font-size: 3em;
+	margin: 0;
+}
+.but-circle {
+	width: 120%;
+	margin-left: -5%;
+	margin-top: 10px;
+}
+.but-circle button {
+	height: 130px;
+	width: 130px;
+	border-radius: 50%;
+	color: white;
+	margin-right: 4%;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.but-circle button:nth-child(1) {
+	background-color: rgba(232, 53, 86, 1);
+}
+.but-circle button:nth-child(1):hover {
+	background-color: rgba(134, 35, 57, 1);
+}
+.but-circle button:nth-child(2) {
+	background-color: rgba(97, 207, 211, 1);
+}
+.but-circle button:nth-child(2):hover {
+	background-color: rgba(64, 138, 141, 1);
+}
+.but-circle button:nth-child(3) {
+	background-color: rgba(209, 200, 37, 1);
+}
+.but-circle button:nth-child(3):hover {
+	background-color: rgba(139, 133, 25, 1);
+}
+.some-info {
+	color: #c3bfbe;
+	font-size: 0.9em;
+}
+.main {
+	margin-top: 150px;
+	display: inline-block;
+	margin-bottom: 50px;
+	transition: 0.5s linear 0s;
+	/*display: none;*/
+}
+button::-moz-focus-inner { 
+	border: none; 
+	padding:0; 
+	margin:0; 
+}
+
+.resume {
+	margin-top: 90px;
+	display: inline-block;
+	margin-bottom: 50px; 
+	transition: 0.5s linear 0s;
+	display: none;
+}
+.resume h2 {
+	text-transform: uppercase;
+	color: white;
+	font-size: 4em;
+}
+.resume .ul-resume {
+	display: inline-block;
+    width: 60%;
+}
+.resume .ul-resume li {
+	margin-left: -35px;
+	margin-top: 30px;
+	padding: 50px 0 50px 150px;
+	border-top: 1px solid #c3bfbe;
+	list-style: none;
+	position: relative;
+}
+.resume .ul-resume li:before {
+	content: " ";
+	height: 130px;
+	width: 130px;
+	background-color: #e83556;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	border-radius: 50%;
+}
+.resume .ul-resume li:after {
+	color: white;
+	font-size: 1.5em;
+    height: 50px;
+    left: 20px;
+    position: absolute;
+    top: 65px;
+    width: 50px;
+}
+.resume .ul-resume li:nth-child(1):after {	
+    content: "Personal attributes";
+}
+.resume .ul-resume li:nth-child(2):after {
+    content: "Employment history";
+    
+}
+.resume .ul-resume li:nth-child(3):after {
+    content: "Educational qualifications";
+}
+.resume .ul-resume li dl dd{
+	margin: 0;
+	margin-bottom: 20px;
+}
+.resume .ul-resume  li dl dt {
+	margin: 0;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+aside.sup {
+	display: inline-block;
+    float: right;
+    margin-top: 50px;
+    width: 25%;
+}
+aside.sup div {
+	position: relative;
+	margin-bottom: 60px;
+}
+aside.sup h3 {
+	border-bottom: 1px solid #c3bfbe;
+	padding-bottom: 20px;
+}
+aside.sup ul {
+	padding-left: 0px;
+}
+aside.sup ul li{
+	list-style: none;
+	margin: 0;
+}
+aside.sup div:before {
+	content: " ";
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #e83556;
+	position: absolute;
+	left: -20px;
+	top: -55px;
+	background-position: 45% center;
+	background-repeat: no-repeat;
+}
+aside.sup div:nth-child(1):before {
+	background-image: url("../images/i.png");
+}
+aside.sup div:nth-child(2):before {
+	background-image: url("../images/earth.png");
+}
+
+.contact {
+	display: none;
+	margin-top: 150px;
+	transition: 1s linear 0s;	
+}
+.contact h2 {
+	color: white;
+    display: inline-block;
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 50px;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+.contact form {
+	float: right;
+    margin-bottom: 50px;
+    width: 45%;
+}
+.contact form input,
+.contact form textarea {
+	background-color: #e83556;
+    border: medium none;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.contact form input {
+	height: 25px;
+}
+.contact form textarea {
+	font-size: 1.3em;
+    height: 120px;
+    resize: vertical;
+}
+.contact form button {
+	background-color: rgba(97, 207, 211, 1);
+    border-radius: 5px;
+    float: right;
+    font-size: 1.2em;
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+}
+.info {
+	display: inline-block;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.bolder {
+	font-size: 1.2em;
+}
+.info ul {
+	display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: -10px;
+    height: 35px
+}
+.info ul li {
+	float: left;
+    list-style: outside none none;
+    margin-left: 10px;
+}
+.info p {
+	clear: both;
+}
+.info p:nth-child(1) {
+	margin-top: 10px;
+}
+.info ul li button {
+	background-color: black;
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.info ul li:nth-child(1) button {
+    background-image: url("../images/facebook.jpeg");    
+}
+.info ul li:nth-child(2) button {
+    background-image: url("../images/twitter.png");    
+}
+.info ul li:nth-child(3) button {
+    background-image: url("../images/google.jpeg");    
+}
+footer {
+	display: inline-block;
+	color: white;
+	background-color: rgba(232, 53, 86, 1);
+	margin: 0 -34.5%;
+    width: 168.8%;
+    border-top: 3px solid white;
+    
+}
+.footer-nav {
+	height: 80px;
+    margin: 30px 20% 0;
+}
+.footer-nav div {
+	float: left;
+	width: 33%;
+}
+.footer-nav button {
+	margin: 0;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	background-color: rgba(97, 207, 211, 1);
+	background-repeat: no-repeat;
+	background-position: 55% 50%;
+	cursor: pointer;
+}
+.phone button {
+	background-image: url("../images/phone.png");
+}
+.mail button {
+	background-image: url("../images/letter.png");
+}
+.soc > button {
+	background-image: url("../images/plus.png");
+}
+.footer-nav div > dl {
+	display: inline-block;
+	font-size: 0.9em;
+	width: 60%;
+}
+.phone, .mail, .soc {
+	position: relative;
+}
+.phone > button, .mail > button, .soc > button {
+	position: absolute;
+	top: 0;
+	left: 20px;
+}
+
+.phone > dl, .mail > dl, .soc > dl {
+	margin-left: 80px;
+    margin-top: 5px;
+}
+.footer-nav dt {
+	font-weight: bold;
+}
+.footer-nav dd {
+	margin: 0;
+	word-wrap: break-word;
+}
+dd > button.fb, dd > button.tw, dd > button.g {
+	background-color: transparent;
+	height: 20px;
+    margin-left: 5px;
+    width: 20px;	
+}
+.fb {
+	background-image: url("../images/facebook.jpeg");
+}
+.tw {
+	background-image: url("../images/twitter.png");
+}
+.g {
+	background-image: url("../images/google.jpeg");
+}
+.soc dl dd {
+	float: left;
+}
+body:after{
+	content: "©WIX.com";
+	color: #c3c3c3;
+    height: 10px;
+    left: 93%;
+    position: fixed;
+    top: 94%;
+    width: 50px;
+}
+.blog {
+	display: none;
+	margin-top: 90px;
+}
+.blog h2 {
+	text-transform: uppercase;
+	font-size: 4em;
+	color: white;
+	margin-bottom: 50px;
+}
+.blog .post {
+	padding: 20px;
+	width: 60%;
+	margin-bottom: 20px;
+}
+.post h3 {
+	font-size: 2.5em;
+	margin-top: 0;
+}
+.post .time {
+    font-style: italic;
+    margin-top: -35px;
+}
+.post img {
+	float: left;
+    margin: 0 10px 10px;
+    width: 65%;
+}
+.post button.more {
+	background-color: rgba(97, 207, 211, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    height: 30px;
+    width: 90px;
+}
+.about-me {
+	float: right;
+	width: 30%;
+	margin-left: 5%;
+}
+.about-me .im{
+	background-image: url("../images/i_am.jpg");
+    background-position: 50% 20%;
+    border-radius: 50%;
+    display: inline-block;
+    height: 200px;
+    overflow: hidden;
+    width: 80%;
+}
+.about-me p {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c3bfbe;
+}

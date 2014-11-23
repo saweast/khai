@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+INDEX VERSION 1.126+/home/teadrinker/Desktop/khai/LavorchukVI/Java/.metadata/.plugins/org.eclipse.jdt.core
+1989682271.index
+664202523.index
+3829351191.index
+1737441395.index
+3448095602.index
+1928036885.index
+1714592054.index
+1198206356.index
+1514218975.index
+1022003584.index
+4211785151.index
+1791498496.index
+2409005450.index
+1407276753.index
+4267884898.index
+=======
 INDEX VERSION 1.126+C:\Users\Vadim\Desktop\khai\LavorchukVI\Java\.metadata\.plugins\org.eclipse.jdt.core
 3955338157.index
 1284074322.index
@@ -37,4 +55,13 @@ INDEX VERSION 1.126+C:\Users\Vadim\Desktop\khai\LavorchukVI\Java\.metadata\.plug
 1028199574.index
 204471957.index
 3699762351.index
+<<<<<<< HEAD
 1604200090.index
+=======
+1248567455.index
+2193033226.index
+1065832147.index
+3850498231.index
+4184689110.index
+>>>>>>> b278a4ed2fef28d9688289600ae9861ebcb70e5b
+>>>>>>> 915f461cba7edb0f8aab16e52291ff014aa564bc

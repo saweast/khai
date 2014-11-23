@@ -2,7 +2,16 @@
 <resources>
 
     <string name="app_name">khai</string>
+<<<<<<< HEAD
     <string name="hello_world">Hello world!</string>
+=======
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+>>>>>>> 915f461cba7edb0f8aab16e52291ff014aa564bc
     <string name="action_settings">Settings</string>
 
 </resources>
