@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ceclop Island</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="g1">
+        <item name="text">jnfvkd</item>
+        <item name="var1">g5</item>
+        <item name="var2">g6</item>
+        <item name="var3">g7</item>
+    </string-array>
+
+</resources>
