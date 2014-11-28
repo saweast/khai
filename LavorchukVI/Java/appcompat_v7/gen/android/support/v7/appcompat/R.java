@@ -2576,7 +2576,11 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
+<<<<<<< HEAD
+            0x0101012f, 0x01010130, 0x01010131, 0x01010435
+=======
             0x0101012f, 0x01010130, 0x01010131, 0x01010438
+>>>>>>> 915f461cba7edb0f8aab16e52291ff014aa564bc
         };
         /**
           <p>

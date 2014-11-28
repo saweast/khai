@@ -12,4 +12,10 @@
 <fullyQualifiedTypeName name="com.uspaun.takeaqueue.PostFiles"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="android.content.res.Resources"/>
+<fullyQualifiedTypeName name="com.students.ceclopisland.R.string"/>
+<fullyQualifiedTypeName name="com.students.ceclopisland.R.attr"/>
+<fullyQualifiedTypeName name="com.students.ceclopisland.R.array"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.students.ceclopisland.R.id"/>
 </qualifiedTypeNameHistroy>

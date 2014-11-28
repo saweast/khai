@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+    package="com.example.khai"
+=======
     package="com.khai.lol"
+>>>>>>> 915f461cba7edb0f8aab16e52291ff014aa564bc
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
+<<<<<<< HEAD
+        android:minSdkVersion="14"
+=======
         android:minSdkVersion="8"
+>>>>>>> 915f461cba7edb0f8aab16e52291ff014aa564bc
         android:targetSdkVersion="14" />
 
     <application
