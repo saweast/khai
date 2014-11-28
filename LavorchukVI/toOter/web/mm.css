@@ -1,0 +1,25 @@
+.block {
+	float: right;
+	border: 3px solid red;
+	background-color: blue;
+	color: white;
+	width: 100%;
+}
+span:nth-child(1) {
+	color: black;
+	font-size: 24px;
+	background-color: red;
+}
+span:nth-child(2) {
+	text-transform: uppercase;
+}
+span:nth-child(3) {
+	text-decoration: underline;
+}
+span:nth-child(4) {
+	font-family: Times New Roman, Arial;
+	font-size: 36px;
+}
+span:nth-child(5) {
+	padding: 0 25px;
+}
