@@ -16,11 +16,14 @@ public class form {
 	private static Text text;
 	private static Text text_1;
 	private static Text text_2;
+	private static Text text_3;
+	private static Text text_4;
+	private static Text text_5;
 
 	public static void main(String[] args) {
 		Display display = Display.getDefault();
 		Shell shell = new Shell();
-		shell.setSize(450, 300);
+		shell.setSize(450, 215);
 		shell.setText("SWT Application");
 		
 		Group group = new Group(shell, SWT.NONE);
@@ -31,7 +34,7 @@ public class form {
 		text_1.setBounds(56, 47, 31, 21);
 		
 		Label lblK = new Label(group, SWT.NONE);
-		lblK.setBounds(10, 53, 55, 15);
+		lblK.setBounds(10, 53, 41, 15);
 		lblK.setText("k");
 		
 		Label label = new Label(group, SWT.NONE);
@@ -66,35 +69,116 @@ public class form {
 		
 		Group group_1 = new Group(shell, SWT.NONE);
 		group_1.setText("\u0427\u0430\u0441\u0442\u0438\u043D\u0430 2");
-		group_1.setBounds(196, 10, 228, 241);
+		group_1.setBounds(196, 10, 228, 154);
 		
-		Label label_1 = new Label(group_1, SWT.NONE);
-		label_1.setBounds(10, 26, 88, 15);
-		label_1.setText("\u0412\u0432\u0435\u0434\u0456\u0442\u044C \u0440\u0435\u0447\u0435\u043D\u043D\u044F");
+		text_3 = new Text(group_1, SWT.BORDER);
+		text_3.setBounds(10, 23, 76, 21);
 		
-		ListViewer listViewer = new ListViewer(group_1, SWT.BORDER | SWT.V_SCROLL);
-		final List list = listViewer.getList();
-		list.setItems(new String[] {});
-		list.setToolTipText("");
-		list.setBounds(10, 47, 208, 118);
+		text_4 = new Text(group_1, SWT.BORDER);
+		text_4.setBounds(10, 50, 76, 21);
 		
-		Button btnJustDoIt = new Button(group_1, SWT.NONE);
-		btnJustDoIt.addSelectionListener(new SelectionAdapter() {
+		text_5 = new Text(group_1, SWT.BORDER);
+		text_5.setBounds(10, 77, 76, 21);
+		
+		final Label lbl1 = new Label(group_1, SWT.NONE);
+		lbl1.setBounds(92, 29, 126, 15);
+		
+		final Label lbl2 = new Label(group_1, SWT.NONE);
+		lbl2.setBounds(92, 56, 126, 15);
+				
+		final Label lbl3 = new Label(group_1, SWT.NONE);
+		lbl3.setBounds(92, 83, 126, 15);
+		
+		Button btnNewButton_1 = new Button(group_1, SWT.NONE);
+		btnNewButton_1.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				String str = "";
-				str = list.toString();
-				for (int i = 0; i < str.length(); i++) {
-					
+				String s1 = text_3.getText(),
+						s2 = text_4.getText(),
+						s3 = text_5.getText(),
+						s4 = "",
+						result = "";
+				s4 = s2.concat(s3);
+				for (int i = 0; i < s1.length(); i++) {
+					if (!s4.contains(s1.substring(i, i+1))) {
+//						if (!result.contains(s1.substring(i, i+1))) {
+							result += s1.substring(i,i+1);
+//						}
+					}
 				}
+				lbl1.setText(result);
+				lbl1.setText(result);
+				result = "";
+				s4 = s1.concat(s3);
+				for (int i = 0; i < s2.length(); i++) {
+					if (!s4.contains(s2.substring(i, i+1))) {
+//						if (!result.contains(s2.substring(i, i+1))) {
+							result += s2.substring(i,i+1);
+//						}
+					}
+				}
+				lbl2.setText(result);
+				result = "";
+				s4 = s1.concat(s2);
+				for (int i = 0; i < s3.length(); i++) {
+					if (!s4.contains(s3.substring(i, i+1))) {
+//						if (!result.contains(s3.substring(i, i+1))) {
+							result += s3.substring(i,i+1);
+//						}
+					}
+				}
+				lbl3.setText(result);
+				result = "";
 			}
 		});
-		btnJustDoIt.setBounds(10, 171, 75, 25);
-		btnJustDoIt.setText("Just do it!");
+		btnNewButton_1.setBounds(10, 114, 75, 25);
+		btnNewButton_1.setText("without");
+		
+		Button btnNewButton_2 = new Button(group_1, SWT.NONE);
+		btnNewButton_2.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				String s1 = text_3.getText(),
+						s2 = text_4.getText(),
+						s3 = text_5.getText(),
+						s4 = "",
+						result = "";
+				s4 = s2.concat(s3);
+				for (int i = 0; i < s1.length(); i++) {
+					if (!s4.contains(s1.substring(i, i+1))) {
+						if (!result.contains(s1.substring(i, i+1))) {
+							result += s1.substring(i,i+1);
+						}
+					}
+				}
+				lbl1.setText(result);
+				result = "";
+				s4 = s1.concat(s3);
+				for (int i = 0; i < s2.length(); i++) {
+					if (!s4.contains(s2.substring(i, i+1))) {
+						if (!result.contains(s2.substring(i, i+1))) {
+							result += s2.substring(i,i+1);
+						}
+					}
+				}
+				lbl2.setText(result);
+				result = "";
+				s4 = s1.concat(s2);
+				for (int i = 0; i < s3.length(); i++) {
+					if (!s4.contains(s3.substring(i, i+1))) {
+						if (!result.contains(s3.substring(i, i+1))) {
+							result += s3.substring(i,i+1);
+						}
+					}
+				}
+				lbl3.setText(result);
+				result = "";
+			}
+		});
+		btnNewButton_2.setBounds(102, 114, 75, 25);
+		btnNewButton_2.setText("with");
 		
 		
-		
-
 		
 
 		shell.open();
