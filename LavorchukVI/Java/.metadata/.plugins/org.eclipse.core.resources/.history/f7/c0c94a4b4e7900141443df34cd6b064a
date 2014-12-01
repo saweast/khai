@@ -1,0 +1,49 @@
+package zaschita;
+
+import java.util.Random;
+
+public class prw4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n,k,l,i,j,q,w,buf;
+		n = k = l = 8;
+		int mas[][] = new int [n][n];
+		for (i = 0; i < n; i++){
+			for (j = 0; j < n; j++){
+				Random rand = new Random();
+				mas[i][j] = rand.nextInt(100);
+				System.out.print(mas[i][j]);
+			}
+			System.out.print("\n");
+		}
+		int masbuf[][] = new int [n][n];
+		for (i = 0; i < n/2; i++) {
+			for (j = n/2; j < k; j++) {
+				masbuf[i][j] = mas[i][j];
+			}
+			k--;
+		}
+		k = 0;
+		for (i = n-1; i > n/2; i--) {
+			for (j = k; j < n/2; j++){
+				masbuf[i][j] = mas[i][j];
+			}
+			k++;
+		}
+		k = n;
+		l = 0; 
+//		for (i = 0; i < n/2; i++) {
+//			for (j = n/2; j < k; j++) {
+//				for (q = n-1; q > n/2; q--) {
+//					for (w = l; w < n/2; w++) {
+//						mas[i][j] = masbuf[q][w];
+//						j++;
+//					}
+//					l--;
+//				}
+//			}
+//		}
+	}
+
+}
