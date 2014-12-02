@@ -3,6 +3,8 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.*;
@@ -193,4 +195,11 @@ public class MainActivity extends Activity implements OnClickListener{
 	    		setButtons();
 	    	}
 		} 
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+		text.setText(strings.get(1));
+		findNumbers();
+		setButtons();
+    	return super.onOptionsItemSelected(item);
+    }
 }
