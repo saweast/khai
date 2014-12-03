@@ -2,7 +2,8 @@
 <resources>
 
 	<string name="app_name">316st</string>
-	<string name="action_settings">Settings</string>
+	<string name="action_settings">Restart</string>
 	<string name="hello_world">Hello world!</string>
+	<string name="onClick">onClick</string>
 
 </resources>
