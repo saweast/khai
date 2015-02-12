@@ -20,7 +20,7 @@ namespace Laba2._3
                 cubes = 0;
                 for (int i = 0; i < n; i++)
                 {
-                    cubes += rand.Next(5) + 1;
+                    cubes += rand.Next(6) + 1;
                 }
                 results[j] = cubes;
             }

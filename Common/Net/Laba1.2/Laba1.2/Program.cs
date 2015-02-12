@@ -11,7 +11,7 @@ namespace Laba1._2
         static void Main(string[] args)
         {
             Cube cube1 = new Cube();
-            cube1.ThrowCube(100);
+            cube1.ThrowCube(1000);
             Console.WriteLine(cube1.ToString());
             cube1.Draw(cube1.One);
             cube1.Draw(cube1.Two);
