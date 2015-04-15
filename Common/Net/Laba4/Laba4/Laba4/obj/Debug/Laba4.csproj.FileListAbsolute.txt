@@ -1,0 +1,9 @@
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\bin\Debug\Laba4.exe.config
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\bin\Debug\Laba4.exe
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\bin\Debug\Laba4.pdb
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.csprojResolveAssemblyReference.cache
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.Form1.resources
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.Properties.Resources.resources
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.csproj.GenerateResource.Cache
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.exe
+D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.pdb

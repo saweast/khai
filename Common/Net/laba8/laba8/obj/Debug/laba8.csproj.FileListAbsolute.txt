@@ -1,0 +1,5 @@
+D:\MyProjects\khai\Common\Net\laba8\laba8\bin\Debug\laba8.exe.config
+D:\MyProjects\khai\Common\Net\laba8\laba8\bin\Debug\laba8.exe
+D:\MyProjects\khai\Common\Net\laba8\laba8\bin\Debug\laba8.pdb
+D:\MyProjects\khai\Common\Net\laba8\laba8\obj\Debug\laba8.exe
+D:\MyProjects\khai\Common\Net\laba8\laba8\obj\Debug\laba8.pdb

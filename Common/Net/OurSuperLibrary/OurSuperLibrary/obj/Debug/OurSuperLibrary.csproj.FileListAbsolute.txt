@@ -1,0 +1,5 @@
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\obj\Debug\OurSuperLibrary.csprojResolveAssemblyReference.cache
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\bin\Debug\OurSuperLibrary.dll
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\bin\Debug\OurSuperLibrary.pdb
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\obj\Debug\OurSuperLibrary.dll
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\obj\Debug\OurSuperLibrary.pdb

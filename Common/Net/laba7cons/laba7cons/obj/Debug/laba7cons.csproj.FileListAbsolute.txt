@@ -1,0 +1,6 @@
+D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\bin\Debug\laba7cons.exe.config
+D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\bin\Debug\laba7cons.exe
+D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\bin\Debug\laba7cons.pdb
+D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.exe
+D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.pdb
+D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.csprojResolveAssemblyReference.cache

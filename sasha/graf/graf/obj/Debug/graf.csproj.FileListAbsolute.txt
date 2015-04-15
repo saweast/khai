@@ -1,0 +1,16 @@
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\obj\Debug\ResolveAssemblyReference.cache
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\obj\Debug\graf.Form1.resources
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\obj\Debug\graf.Properties.Resources.resources
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\obj\Debug\graf.csproj.GenerateResource.Cache
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\bin\Debug\graf.exe
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\bin\Debug\graf.pdb
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\obj\Debug\graf.exe
+C:\My Documents\Visual Studio 2008\Projects\graf\graf\obj\Debug\graf.pdb
+D:\MyProjects\khai\sasha\graf\graf\obj\Debug\graf.exe
+D:\MyProjects\khai\sasha\graf\graf\obj\Debug\graf.pdb
+D:\MyProjects\khai\sasha\graf\graf\bin\Debug\graf.exe
+D:\MyProjects\khai\sasha\graf\graf\bin\Debug\graf.pdb
+D:\MyProjects\khai\sasha\graf\graf\obj\Debug\graf.csprojResolveAssemblyReference.cache
+D:\MyProjects\khai\sasha\graf\graf\obj\Debug\graf.Form1.resources
+D:\MyProjects\khai\sasha\graf\graf\obj\Debug\graf.Properties.Resources.resources
+D:\MyProjects\khai\sasha\graf\graf\obj\Debug\graf.csproj.GenerateResource.Cache

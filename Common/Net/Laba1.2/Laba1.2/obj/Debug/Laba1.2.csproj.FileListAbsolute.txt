@@ -1,0 +1,6 @@
+D:\MyProjects\khai\Common\Net\Laba1.2\Laba1.2\bin\Debug\Laba1.2.exe.config
+D:\MyProjects\khai\Common\Net\Laba1.2\Laba1.2\bin\Debug\Laba1.2.exe
+D:\MyProjects\khai\Common\Net\Laba1.2\Laba1.2\bin\Debug\Laba1.2.pdb
+D:\MyProjects\khai\Common\Net\Laba1.2\Laba1.2\obj\Debug\Laba1.2.csprojResolveAssemblyReference.cache
+D:\MyProjects\khai\Common\Net\Laba1.2\Laba1.2\obj\Debug\Laba1.2.exe
+D:\MyProjects\khai\Common\Net\Laba1.2\Laba1.2\obj\Debug\Laba1.2.pdb
