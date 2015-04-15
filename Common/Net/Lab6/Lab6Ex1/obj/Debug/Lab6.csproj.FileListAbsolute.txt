@@ -1,0 +1,6 @@
+D:\MyProjects\khai\Common\Net\Lab6\Lab6Ex1\bin\Debug\Lab6Ex1.exe.config
+D:\MyProjects\khai\Common\Net\Lab6\Lab6Ex1\obj\Debug\Lab6Ex1.exe
+D:\MyProjects\khai\Common\Net\Lab6\Lab6Ex1\obj\Debug\Lab6Ex1.pdb
+D:\MyProjects\khai\Common\Net\Lab6\Lab6Ex1\bin\Debug\Lab6Ex1.exe
+D:\MyProjects\khai\Common\Net\Lab6\Lab6Ex1\bin\Debug\Lab6Ex1.pdb
+D:\MyProjects\khai\Common\Net\Lab6\Lab6Ex1\obj\Debug\Lab6.csprojResolveAssemblyReference.cache

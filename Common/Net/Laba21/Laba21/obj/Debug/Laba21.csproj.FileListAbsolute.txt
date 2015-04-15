@@ -1,0 +1,9 @@
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\bin\Debug\Laba21.exe.config
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\bin\Debug\Laba21.exe
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\bin\Debug\Laba21.pdb
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\obj\Debug\Laba21.csprojResolveAssemblyReference.cache
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\obj\Debug\Laba21.Form1.resources
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\obj\Debug\Laba21.Properties.Resources.resources
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\obj\Debug\Laba21.csproj.GenerateResource.Cache
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\obj\Debug\Laba21.exe
+D:\MyProjects\khai\Common\Net\Laba21\Laba21\obj\Debug\Laba21.pdb

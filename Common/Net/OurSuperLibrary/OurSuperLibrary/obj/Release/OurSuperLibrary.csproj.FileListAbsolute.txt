@@ -1,0 +1,4 @@
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\bin\Release\OurSuperLibrary.dll
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\bin\Release\OurSuperLibrary.pdb
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\obj\Release\OurSuperLibrary.dll
+D:\MyProjects\khai\Common\Net\OurSuperLibrary\OurSuperLibrary\obj\Release\OurSuperLibrary.pdb

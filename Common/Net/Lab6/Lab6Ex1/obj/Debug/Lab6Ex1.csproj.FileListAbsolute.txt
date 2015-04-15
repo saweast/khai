@@ -1,0 +1,6 @@
+D:\MyProjects\khai\VolkivskyVV\Net\Lab6Ex1\Lab6Ex1\bin\Debug\Lab6Ex1.exe.config
+D:\MyProjects\khai\VolkivskyVV\Net\Lab6Ex1\Lab6Ex1\bin\Debug\Lab6Ex1.exe
+D:\MyProjects\khai\VolkivskyVV\Net\Lab6Ex1\Lab6Ex1\bin\Debug\Lab6Ex1.pdb
+D:\MyProjects\khai\VolkivskyVV\Net\Lab6Ex1\Lab6Ex1\obj\Debug\Lab6Ex1.csprojResolveAssemblyReference.cache
+D:\MyProjects\khai\VolkivskyVV\Net\Lab6Ex1\Lab6Ex1\obj\Debug\Lab6Ex1.exe
+D:\MyProjects\khai\VolkivskyVV\Net\Lab6Ex1\Lab6Ex1\obj\Debug\Lab6Ex1.pdb
