@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="windows-1251">
+	<title>Конвертер валют</title>
+	<style type="text/css">
+.special {
+	background-color: yellow;
+}	
+	</style>
+
+</head>
+<body>	
+    <form name="Form1">
+	<table border="0">
+	<tr>
+	<td>Исходная валюта</td>
+	<td>	
+		<select name="from" id="from" onchange='CheckFields();'>
+			<option value="0" selected="selected">Доллар США</option>
+			<option value="1">Евро</option>
+			<option value="2">Рубль</option>
+			<option value="3">Гривна</option>
+			<option value="4">Польский злотый</option>			
+		</select>
+	</td>
+	</tr>
+	<td>Сумма</td>
+	<td><input name="cash" id="cash" class="is" type="text" /></td>
+	</tr>
+	<tr>
+	<td>Расчетная валюта</td>
+	<td>
+		<select name="to" id="to" onchange='CheckFields();'>
+			<option value="0">Доллар США</option>
+			<option value="1">Евро</option>
+			<option value="2">Рубль</option>
+			<option value="3" selected="selected">Гривна</option>
+			<option value="4">Польский злотый</option>ы		
+		</select>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<button type="button" name="Calculate" onclick="Conv()">Расчитать</button>
+	</td>
+	</tr></table>
+	</form>
+	<p>Результат <span id="result"><span class="result">0,00</span></span></p>
+	<p>Скидка <span id="discont"><span class="discont">0,00</span></span></p>
+	<p>
+		<button type="button" id="check">Чек</button>
+	</p>
+	<a href="courseEditor.html">Редактор курса</a>
+	<div class="history">
+		
+	</div>
+</body>
+<script  type="text/javascript" src="js/individual.js"></script>
+</html>

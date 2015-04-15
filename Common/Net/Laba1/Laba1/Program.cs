@@ -11,7 +11,7 @@ namespace Laba1
         static void Main(string[] args)
         {
             int sum = 0, sum2 = 0, g = 0;
-            int[] mas = {1, 1, 1, -1, 1, 4};
+            int[] mas = {1, 1, 1, 1, 1, -4};
 
                 for (int i = 0; i < mas.Length; i++)
                 {
@@ -19,6 +19,7 @@ namespace Laba1
                         sum += mas[i];
                 }
                 while (g < mas.Length && mas[g] >= 0)
+                    //while (mas[g] >= 0 && g < mas.Length)
                 {
                     sum2 += mas[g];
                     g++;

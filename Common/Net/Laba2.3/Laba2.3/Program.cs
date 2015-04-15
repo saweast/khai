@@ -25,7 +25,6 @@ namespace Laba2._3
                 results[j] = cubes;
             }
             int[] uniq = new int[m*n*6];
-            int un = 0;
             for (int i = 0; i < n*6+1; i++)
             {
                 for(int j = 0; j < m; j++)

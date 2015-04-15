@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Редактор валют</title>
+	
+
+</head>
+<body>
+	<script  type="text/javascript" src="js/individual.js"></script>
+    <form name="FormCourse">
+	<table border="0">
+	<tr>
+	<td>Исходная валюта</td>
+	<td>
+	
+		<select name="Course" onchange="GetCourse()";>
+		    <option value="1" selected="true">Евро</option>
+			<option value="2">Рубль</option>
+			<option value="3">Гривна</option>
+			<option value="4">Польский злотый</option>
+			
+		</select>
+	</td>
+	</tr>
+	<td>Курс валюты(отн. USD)</td>
+	<td><input name="CourseValue" type="text" onkeyup="CheckEmptyValue();" /></td>
+	</tr>
+	
+	<tr>
+	<td>
+	<button type="button" disabled name="SaveCourse" onclick="SetCourse()">Сохранить</button>
+	</td>
+	</tr></table>
+	</form>
+	<a href="lb1.html">Главная</a>
+</body>
+</html>

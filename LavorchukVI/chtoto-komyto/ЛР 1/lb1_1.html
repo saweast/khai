@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Output</title>
+</head>
+<body>
+<form>
+	First name:<br>
+	<input type="text" name="firstname" id="fn" value="">
+	<br>
+	Last name:<br>
+	<input type="text" name="lastname" id="ln" value="">
+	<br>
+	<input type="button" id="button" value="Make it!">
+</form>
+</body>
+<script type="text/javascript">
+	
+	document.getElementById('button').addEventListener('click', function(){
+		fn = document.getElementById('fn').value;
+	ln = document.getElementById('ln').value;
+		Window = window.open("", "MsgWindow", "width=500, height=300");
+		Window.document.write("<p>First name: "+fn+"<br>Second name: "+ln+"<br></p>");
+		Window.document.write("<p>"+navigator.userAgent+"</p>");
+		Window.document.write("<p>"+navigator.platform+"</p>");
+		var now = new Date();
+		Window.document.write("<p>"+now+"</p>");
+		Window.document.write("<p><a href='javascript:self.close();'>Close</a>");
+	})
+</script>
+</html>
+ -->
+ <!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="utf-8">  
+<title>JavaScript form validation - checking email</title>  
+<style type="text/css">
+	li {list-style-type: none;  
+font-size: 16pt;  
+}  
+.mail {  
+margin: auto;  
+padding-top: 10px;  
+padding-bottom: 10px;  
+width: 400px;  
+background : #D8F1F8;  
+border: 1px soild silver;  
+}  
+.mail h2 {  
+margin-left: 38px;  
+}  
+input {  
+font-size: 20pt;  
+}  
+input:focus, textarea:focus{  
+background-color: lightyellow;  
+}  
+input submit {  
+font-size: 12pt;  
+}  
+.rq {  
+color: #FF0000;  
+font-size: 10pt;  
+}  
+</style>    
+</head>  
+<body onload='document.form1.text1.focus()'>  
+<div class="mail">  
+<h2>Input an email and Submit</h2>  
+<form name="form1" action="#">   
+<ul>  
+<li><input type='text' name='text1'/></li>  
+<li>&nbsp;</li>  
+<li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></li>  
+<li>&nbsp;</li>  
+</ul>  
+</form>  
+</div>  
+<script>
+	function ValidateEmail(inputText)  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(inputText.value.match(mailformat))  
+{  
+document.form1.text1.focus();  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+document.form1.text1.focus();  
+return false;  
+}  
+}  
+</script>  
+</body>  
+</html>  
