@@ -1,0 +1,65 @@
+#<IfModule mod_rewrite.c>
+
+    Options +FollowSymlinks
+
+    RewriteEngine On
+
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_URI} !-f
+#    RewriteCond %{REQUEST_URI} !/$
+#    RewriteCond %{REQUEST_URI} !.html$
+#    RewriteCond %{REQUEST_URI} !.xml$
+#    RewriteRule (.+) $1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} !^/backend/
+RewriteCond %{REQUEST_URI}  !\.(css|js|php|html?|jpg|gif)$
+RewriteRule ^(.*)([^/])$ http://%{HTTP_HOST}/$1$2/ [L,R=301]
+#</IfModule>
+
+
+
+#<IfModule mod_rewrite.c>
+
+    # deal with backend first
+
+    RewriteCond %{REQUEST_URI} ^/(backend)
+
+    RewriteRule ^backend/assets/(.*)$ backend/web/assets/$1 [L]
+
+    RewriteRule ^backend/css/(.*)$ backend/web/css/$1 [L]
+    RewriteRule ^backend/js/(.*)$ backend/web/js/$1 [L]
+
+
+
+    RewriteCond %{REQUEST_URI} !^/backend/web/(assets|css)/
+    RewriteCond %{REQUEST_URI} !^/backend/web/(assets|js)/
+
+    RewriteCond %{REQUEST_URI} ^/(backend)
+
+    RewriteRule ^.*$ backend/web/index.php [L]
+
+
+
+    RewriteCond %{REQUEST_URI} ^/(assets|css)
+    RewriteCond %{REQUEST_URI} ^/(assets|js)
+
+    RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+
+    RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+    RewriteRule ^css/(.*)$ frontend/web/js/$1 [L]
+
+
+
+    RewriteCond %{REQUEST_URI} !^/(frontend|backend)/web/(assets|css)/
+    RewriteCond %{REQUEST_URI} !^/(frontend|backend)/web/(assets|js)/
+
+    RewriteCond %{REQUEST_URI} !index.php
+
+    RewriteCond %{REQUEST_FILENAME} !-f [OR]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^.*$ frontend/web/index.php
+
+#</IfModule>
