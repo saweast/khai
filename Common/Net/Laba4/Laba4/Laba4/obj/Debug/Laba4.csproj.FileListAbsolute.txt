@@ -7,3 +7,12 @@ D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.Properties.Resou
 D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.csproj.GenerateResource.Cache
 D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.exe
 D:\MyProjects\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.pdb
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\bin\Debug\Laba4.exe.config
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.exe
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.pdb
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\bin\Debug\Laba4.exe
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\bin\Debug\Laba4.pdb
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.csprojResolveAssemblyReference.cache
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.Form1.resources
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.Properties.Resources.resources
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba4\Laba4\Laba4\obj\Debug\Laba4.csproj.GenerateResource.Cache

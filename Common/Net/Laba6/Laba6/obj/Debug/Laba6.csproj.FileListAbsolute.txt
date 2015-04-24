@@ -1,2 +1,4 @@
 D:\MyProjects\khai\Common\Net\Laba6\Laba6\bin\Debug\Laba6.exe.config
 D:\MyProjects\khai\Common\Net\Laba6\Laba6\obj\Debug\Laba6.csprojResolveAssemblyReference.cache
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba6\Laba6\bin\Debug\Laba6.exe.config
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba6\Laba6\obj\Debug\Laba6.csprojResolveAssemblyReference.cache

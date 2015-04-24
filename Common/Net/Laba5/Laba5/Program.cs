@@ -11,7 +11,7 @@ namespace Laba5
     {
         static void Main(string[] args)
         {
-            double[] arr = {1, 2, 3, 4, 5};
+            double[] arr = { 1, 2, 3, 4, 5 };
             Console.WriteLine(Class_HelloWorld.HelloWorld());
             Console.WriteLine("Enter a b");
             Console.WriteLine("summ = " + Class_Sum1.sum1(Convert.ToDouble(Console.ReadLine()),
