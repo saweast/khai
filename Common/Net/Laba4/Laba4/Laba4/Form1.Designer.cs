@@ -41,8 +41,8 @@
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.clmLastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmFirstName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmLastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmAge = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.flowLayoutPanel1.SuspendLayout();
@@ -153,17 +153,16 @@
             this.listView1.Size = new System.Drawing.Size(487, 237);
             this.listView1.TabIndex = 6;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // clmLastName
-            // 
-            this.clmLastName.DisplayIndex = 1;
-            this.clmLastName.Text = "Прізвище";
             // 
             // clmFirstName
             // 
             this.clmFirstName.DisplayIndex = 0;
             this.clmFirstName.Text = "Ім\'я";
+            // 
+            // clmLastName
+            // 
+            this.clmLastName.DisplayIndex = 1;
+            this.clmLastName.Text = "Прізвище";
             // 
             // clmAge
             // 

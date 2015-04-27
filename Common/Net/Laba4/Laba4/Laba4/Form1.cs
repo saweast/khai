@@ -55,21 +55,16 @@ namespace Laba4
             {
                     item = new ListViewItem(
                         new string[] 
-                            {new    
+                            {
                                 bufWorker.LastName,
                                 bufWorker.FirstName,
-                                bufWorker.getAge().ToString(),
+                                bufWorker.getAge().ToString()
                             }
                     );
                     item.Tag = bufWorker;
                     listView1.Items.Add(item);
                     bufWorker = null;
             }
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

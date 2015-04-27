@@ -4,9 +4,3 @@ D:\MyProjects\khai\Common\Net\Laba5\Laba5\bin\Debug\Laba5.pdb
 D:\MyProjects\khai\Common\Net\Laba5\Laba5\obj\Debug\Laba5.csprojResolveAssemblyReference.cache
 D:\MyProjects\khai\Common\Net\Laba5\Laba5\obj\Debug\Laba5.exe
 D:\MyProjects\khai\Common\Net\Laba5\Laba5\obj\Debug\Laba5.pdb
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba5\Laba5\bin\Debug\Laba5.exe.config
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba5\Laba5\obj\Debug\Laba5.exe
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba5\Laba5\obj\Debug\Laba5.pdb
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba5\Laba5\bin\Debug\Laba5.exe
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba5\Laba5\bin\Debug\Laba5.pdb
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba5\Laba5\obj\Debug\Laba5.csprojResolveAssemblyReference.cache

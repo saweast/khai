@@ -3,9 +3,3 @@ D:\MyProjects\khai\Common\Net\Laba3_1_3\Laba3_1_3\bin\Debug\Laba3_1_3.exe
 D:\MyProjects\khai\Common\Net\Laba3_1_3\Laba3_1_3\bin\Debug\Laba3_1_3.pdb
 D:\MyProjects\khai\Common\Net\Laba3_1_3\Laba3_1_3\obj\Debug\Laba3_1_3.exe
 D:\MyProjects\khai\Common\Net\Laba3_1_3\Laba3_1_3\obj\Debug\Laba3_1_3.pdb
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba3_1_3\Laba3_1_3\bin\Debug\Laba3_1_3.exe.config
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba3_1_3\Laba3_1_3\obj\Debug\Laba3_1_3.exe
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba3_1_3\Laba3_1_3\obj\Debug\Laba3_1_3.pdb
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba3_1_3\Laba3_1_3\bin\Debug\Laba3_1_3.exe
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba3_1_3\Laba3_1_3\bin\Debug\Laba3_1_3.pdb
-C:\Users\Vadim\Documents\GitHub\khai\Common\Net\Laba3_1_3\Laba3_1_3\obj\Debug\Laba3_1_3.csprojResolveAssemblyReference.cache

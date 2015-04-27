@@ -9,20 +9,6 @@ namespace Lab6E
 {
     class Program
     {
-        static int[] getArrInt(Random rand, int n)
-        {
-            int[] a = new int[n];
-            for (int i = 0; i < n; i++) a[i] = rand.Next(10);
-            return a;
-        }
-
-        static void PrintArr(int[] a)
-        {
-            string s = "";
-            for (int i = 0; i < a.Length; i++) s += a[i] + "  ";
-            Console.WriteLine("Array: " + s);
-        }
-
         static void Main(string[] args)
         {
             Random rand = new Random();
@@ -35,9 +21,8 @@ namespace Lab6E
             type = Assembly.LoadFrom("../../OurSuperLibrary.dll").GetType("OurSuperLibrary.Class_Sum1", true);
             Console.WriteLine("{0} + {1} = {2}", a, b, type.GetMethod("sum1").Invoke(null, new object[] { a, b }));
 
-            int n = rand.Next(3, 11);
-            double[] array = new double[n];
-            for (int i = 0; i < n; i++)
+            double[] array = new double[10];
+            for (int i = 0; i < 10; i++)
             {
                 array[i] = rand.Next(10);
                 Console.Write(array[i] + "  ");
@@ -45,9 +30,7 @@ namespace Lab6E
 
             type = Assembly.LoadFrom("../../OurSuperLibrary.dll").GetType("OurSuperLibrary.Class_Sum2", true);
             Console.WriteLine("\nSum = " + type.GetMethod("sum1", new Type[] { typeof(double[]) }).Invoke(null, new object[] { array }));
-
-            int count = rand.Next(1, (n + 1));
-
+            int count = 5;
             int nArrT = arrT.Length;
             MethodInfo[][] arrMI = new MethodInfo[nArrT][];
             for (int i = 0; i < nArrT; i++)
