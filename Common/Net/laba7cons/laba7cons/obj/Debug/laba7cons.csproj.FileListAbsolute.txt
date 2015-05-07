@@ -4,3 +4,9 @@ D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\bin\Debug\laba7cons.pdb
 D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.exe
 D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.pdb
 D:\MyProjects\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.csprojResolveAssemblyReference.cache
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba7cons\laba7cons\bin\Debug\laba7cons.exe.config
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.exe
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.pdb
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba7cons\laba7cons\bin\Debug\laba7cons.exe
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba7cons\laba7cons\bin\Debug\laba7cons.pdb
+C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba7cons\laba7cons\obj\Debug\laba7cons.csprojResolveAssemblyReference.cache
