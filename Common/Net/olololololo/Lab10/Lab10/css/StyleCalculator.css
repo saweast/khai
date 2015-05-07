@@ -1,0 +1,63 @@
+﻿body{
+    width: 350px;
+    margin: 15px auto;
+    border: 1px solid black;
+}
+
+h1{
+    width: 210px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#formCalculator{
+    width: 300px;
+    margin: 10px auto;
+}
+
+#Operand1, #Operand2{
+    width: 100px;
+    display: block;
+    float: left;
+}
+
+#Operand2{
+    float: none;
+}
+
+#Operand1{
+    margin-left: 12px;
+}
+
+#Expression, #Operations, #Results{
+    width: 250px;
+    margin: 15px auto;
+}
+
+#Operation{
+    font-weight: bold;
+    display: block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    float: left;
+}
+
+#Expression{
+    margin-top: 0;
+}
+
+.inputOperations{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.inputOperations:first-child{
+    margin-left: 37px;
+}
+
+#Calculate, #Result{
+    padding: 5px;
+    font-weight: bold;
+}

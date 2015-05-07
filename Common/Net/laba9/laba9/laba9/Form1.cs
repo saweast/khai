@@ -19,7 +19,7 @@ namespace laba9
         }
 
         public List<Student> StudentsList = new List<Student>();
-        public Form2 frm2 = new Form2();
+        public Form2 frm2;
         Student studen1 = new Student();
 
         public void loadAll(bool reload = false, int stID = 0)
@@ -27,47 +27,54 @@ namespace laba9
             if (reload)
                 comboBox1.Items.Clear();
             if (comboBox1.Items.Count == 0)
-            foreach(Student st in StudentsList)
-            {
-                comboBox1.Items.Add(st.FirstName + " " + st.LastName);
-            }
-            label2.Text = ((Student)StudentsList[stID]).Date.ToString();
+                foreach (Student st in StudentsList)
+                {
+                    comboBox1.Items.Add(st);
+                    
+                    //st.FirstName + " " + st.LastName
+                }
+            label2.Text = ((Student)comboBox1.Items[stID]).Date.ToString();
 
             try
             {
-                pictureBox1.Image = Image.FromFile(((Student)StudentsList[stID]).photoID + ".jpg");
+                pictureBox1.Image = Image.FromFile(((Student)comboBox1.Items[stID]).photoID + ".jpg");
             }
             catch
             {
                 pictureBox1.Image = pictureBox1.ErrorImage;
             }
-            //comboBox1.SelectedIndex = stID;
         }
 
+        //StudentsList.Add(new Student(0, "Прізвища", "Студентів", new DateTime(1, 1, 1), 0));
         private void Form1_Load(object sender, EventArgs e)
         {
             StudentsList = studen1.LoadToList();
+            foreach (Student st in StudentsList)
+            {
+                comboBox1.Items.Add(st);
+            }
             loadAll();
             comboBox1.SelectedIndex = 0;
+            frm2 = new Form2(this);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadAll(false, comboBox1.SelectedIndex);
         }
-        int getA(string abc)
+        /*int getA(string abc)
         {
             int resul = 0;
-            for(int i = 0; i < StudentsList.Count; i++)
+            for(int i = 0; i < comboBox1.Items.Count; i++)
             {
-                string fln = ((Student)StudentsList[i]).FirstName + " " + ((Student)StudentsList[i]).LastName;
+                string fln = ((Student)comboBox1.Items[i]).FirstName + " " + ((Student)comboBox1.Items[i]).LastName;
                 if (fln.Equals(abc))
                 {
-                    resul = ((Student)StudentsList[i]).Id;
+                    resul = ((Student)comboBox1.Items[i]).Id;
                 }
             }
             return resul;
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -91,25 +98,24 @@ namespace laba9
             frm2.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        public void reloadL()
         {
             StudentsList = studen1.LoadToList();
             int mySelInd = comboBox1.SelectedIndex;
-            loadAll(true, mySelInd-1);
-            comboBox1.SelectedIndex = mySelInd-1;
+            loadAll(true, mySelInd);
+            comboBox1.SelectedIndex = mySelInd;
             button1.Enabled = true;
             button2.Enabled = true;
-            //button3.Enabled = true;
             button4.Enabled = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             int mySelInd = comboBox1.SelectedIndex;
-            studen1.DeleteRow(getA(comboBox1.Text));
-            loadAll(true, mySelInd-1);
+            studen1.DeleteRow(((Student)comboBox1.SelectedItem).Id);
+            loadAll(true, mySelInd);
             comboBox1.SelectedIndex = mySelInd;
-            button3.PerformClick();
+            reloadL();
         }
     }
 }

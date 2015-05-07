@@ -1,0 +1,17 @@
+﻿h1{
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table{
+    margin: 15px auto;
+}
+
+table td{
+    padding: 5px;
+}
+
+table tr:first-child td{
+    font-weight: bold;
+}

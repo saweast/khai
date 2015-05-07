@@ -13,15 +13,17 @@ namespace laba9
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(Form1 fm1)
         {
             InitializeComponent();
+            this.frm1 = fm1;
         }
 
         public List<Student> StudentsList = new List<Student>();
         public int selID = 0;
         public bool isEdit = false;
         Student stud1 = new Student();
+        Form1 frm1;
         public void fillFields(int stID)
         {
             textBox1.Text = ((Student)StudentsList[stID]).FirstName;
@@ -53,6 +55,7 @@ namespace laba9
             else
                 stud1.InsertIntoStudents(textBox1.Text, textBox2.Text, dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             StudentsList = stud1.LoadToList();
+            frm1.reloadL();
             this.Hide();
         }
     }
