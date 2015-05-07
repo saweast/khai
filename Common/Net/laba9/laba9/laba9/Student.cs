@@ -20,7 +20,6 @@ namespace laba9
 
         public Student()
         {
-            //myConn.Open();
         }
         public Student(int id, string fName, string lName, DateTime date, int phID)
         {
