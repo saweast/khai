@@ -11,7 +11,7 @@
     <body>
         <asp:Label runat="server" ID="ErrorMessage"></asp:Label>
         <h1>Students</h1>
-        <asp:DataGrid runat="server" ID="dgStudents" AutoGenerateColumns="false">
+        <asp:DataGrid runat="server" ID="dgStudents" AutoGenerateColumns="false" OnSelectedIndexChanged="dgStudents_SelectedIndexChanged">
             <Columns>
                 <asp:BoundColumn HeaderText="StudentID" DataField="StudentID"></asp:BoundColumn>
                 <asp:BoundColumn HeaderText="FirstName" DataField="FirstName"></asp:BoundColumn>

@@ -21,6 +21,7 @@ namespace laba9
         public List<Student> StudentsList = new List<Student>();
         public Form2 frm2;
         Student studen1 = new Student();
+        
 
         public void loadAll(bool reload = false, int stID = 0)
         {
@@ -30,8 +31,6 @@ namespace laba9
                 foreach (Student st in StudentsList)
                 {
                     comboBox1.Items.Add(st);
-                    
-                    //st.FirstName + " " + st.LastName
                 }
             label2.Text = ((Student)comboBox1.Items[stID]).Date.ToString();
 
@@ -44,8 +43,6 @@ namespace laba9
                 pictureBox1.Image = pictureBox1.ErrorImage;
             }
         }
-
-        //StudentsList.Add(new Student(0, "Прізвища", "Студентів", new DateTime(1, 1, 1), 0));
         private void Form1_Load(object sender, EventArgs e)
         {
             StudentsList = studen1.LoadToList();
@@ -81,9 +78,6 @@ namespace laba9
             frm2.isEdit = false;
             frm2.clearFields();
             frm2.ShowDialog();
-            button1.Enabled = false;
-            button2.Enabled = false;
-            button4.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -91,10 +85,7 @@ namespace laba9
             frm2.StudentsList = StudentsList;
             frm2.fillFields(comboBox1.SelectedIndex);
             frm2.isEdit = true;
-            frm2.selID = getA(comboBox1.Text);
-            button1.Enabled = false;
-            button2.Enabled = false;
-            button4.Enabled = false;
+            frm2.selID = ((Student)comboBox1.SelectedItem).Id;
             frm2.ShowDialog();
         }
 
@@ -104,9 +95,6 @@ namespace laba9
             int mySelInd = comboBox1.SelectedIndex;
             loadAll(true, mySelInd);
             comboBox1.SelectedIndex = mySelInd;
-            button1.Enabled = true;
-            button2.Enabled = true;
-            button4.Enabled = true;
         }
 
         private void button4_Click(object sender, EventArgs e)

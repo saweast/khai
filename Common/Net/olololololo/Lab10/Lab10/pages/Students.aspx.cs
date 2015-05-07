@@ -15,17 +15,14 @@ namespace Lab10.pages
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            object result = StudentModel.GetStudents();
-            if(result is List<Student>)
-            {
-                students = (List<Student>)result;
+            students = (List<Student>)StudentModel.GetStudents();
                 dgStudents.DataSource = students;
                 dgStudents.DataBind();
-            }
-            else if(result is string)
-            {
-                ErrorMessage.Text = (string)result;
-            }
+        }
+
+        protected void dgStudents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

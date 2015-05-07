@@ -24,6 +24,9 @@ namespace laba9
         public bool isEdit = false;
         Student stud1 = new Student();
         Form1 frm1;
+        
+        bool isCaptured = false;
+
         public void fillFields(int stID)
         {
             textBox1.Text = ((Student)StudentsList[stID]).FirstName;
@@ -40,7 +43,6 @@ namespace laba9
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +59,15 @@ namespace laba9
             StudentsList = stud1.LoadToList();
             frm1.reloadL();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

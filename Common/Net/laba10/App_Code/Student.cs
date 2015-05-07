@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 
-namespace laba9
+namespace laba10
 {
     public class Student
     {
-        public int Id = 0;
-        public string FirstName = "";
-        public string LastName = "";
-        public DateTime Date = new DateTime();
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime Date { get; set; }
         public int photoID = 0;
         public SqlConnection myConn = new SqlConnection(@"Data Source=TRAKTOR\SQLEXPRESS;Initial Catalog=Institute;Integrated Security=True;");
         public SqlCommand myComm;
