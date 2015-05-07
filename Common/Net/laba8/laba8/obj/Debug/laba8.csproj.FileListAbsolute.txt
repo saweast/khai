@@ -3,9 +3,13 @@ D:\MyProjects\khai\Common\Net\laba8\laba8\bin\Debug\laba8.exe
 D:\MyProjects\khai\Common\Net\laba8\laba8\bin\Debug\laba8.pdb
 D:\MyProjects\khai\Common\Net\laba8\laba8\obj\Debug\laba8.exe
 D:\MyProjects\khai\Common\Net\laba8\laba8\obj\Debug\laba8.pdb
+<<<<<<< HEAD
 C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba8\laba8\bin\Debug\laba8.exe.config
 C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba8\laba8\obj\Debug\laba8.exe
 C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba8\laba8\obj\Debug\laba8.pdb
 C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba8\laba8\bin\Debug\laba8.exe
 C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba8\laba8\bin\Debug\laba8.pdb
 C:\Users\Vadim\Documents\GitHub\khai\Common\Net\laba8\laba8\obj\Debug\laba8.csprojResolveAssemblyReference.cache
+=======
+D:\MyProjects\khai\Common\Net\laba8\laba8\obj\Debug\laba8.csprojResolveAssemblyReference.cache
+>>>>>>> 9d148ee8c41a2cb04ab82c156ed6780f19193ff2
