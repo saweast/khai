@@ -29,8 +29,11 @@ namespace laba7cons
         static void Main(string[] args)
         {
             FunkDelegate funk = meth1;
+            Console.WriteLine("Vvedite znachenie x: ");
             double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Vvedite znachenie shag: ");
             int dx = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Vvedite znachenie kolichestvo: ");
             int count = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Stepin");
             Printable(x, dx, count, funk);

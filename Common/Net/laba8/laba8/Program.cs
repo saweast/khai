@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba8
 {
-<<<<<<< HEAD
 
-=======
->>>>>>> 9d148ee8c41a2cb04ab82c156ed6780f19193ff2
     delegate void CubeEventHandler();
 
     class MaxEvent
@@ -75,17 +72,7 @@ namespace laba8
             Random r = new Random();
             Console.WriteLine("Введіть кількість разів, яку потрібно кинути кубик!");
             int n = Convert.ToInt32(Console.ReadLine());
-<<<<<<< HEAD
-            Cube[] kubiks = new Cube[n];
-            for (int i = 0; i < n; i++)
-            {
-                int x = r.Next(1, 7);
-                kubiks[i] = new Cube(x);
-                Console.Write(" " + x);
-                if (kubiks[i].isMax())
-                    myMaxEvent.OnMyEvent();
-                else if (kubiks[i].isMin())
-=======
+            
             Cube kubiks;
             for (int i = 0; i < n; i++)
             {
@@ -95,11 +82,11 @@ namespace laba8
                 if (kubiks.isMax())
                     myMaxEvent.OnMyEvent();
                 else if (kubiks.isMin())
->>>>>>> 9d148ee8c41a2cb04ab82c156ed6780f19193ff2
                     myMinEvent.OnMyEvent();
                 Console.WriteLine();
             }
             Console.ReadKey();
         }
     }
-}
+    }
+
